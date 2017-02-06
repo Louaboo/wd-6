@@ -1,0 +1,23 @@
+body{
+font-family: cursive;
+font-size: 30px;
+}
+h1{
+  color: #074ebf;
+  font-size: 50px;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  color: green;
+  text-decoration: none;
+}
+a:hover{
+  color: hotpink;
+  text-decoration: underline;
+}
+a:active{
+  color: red;
+  text-decoration: line-through;
+}
