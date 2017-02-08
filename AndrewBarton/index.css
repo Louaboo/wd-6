@@ -1,6 +1,12 @@
-body{
+body {
   background-image: url(https://i.ytimg.com/vi/de78Odrw6KE/maxresdefault.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+p.example {
+  color:white
+}
+h1 {
+  color: #ffffff
 }
