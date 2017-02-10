@@ -13,21 +13,37 @@
     overflow: hidden;
     background-color: #0047b3;
 }
-ul.topnav li {float: left;}
 ul.topnav li a {
-    display: inline-block;
+    display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 84px;
+    padding: 10px 70px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 20px;
+      position: relative
 }
 ul.topnav li a:hover {background-color: #555;}
+#nav {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+#nav ul {
+  display: table-row;
+}
+#nav li {
+  display: table-cell;
+  margin: 0;
+}
+#nav li {
+	float: center;
+}
 </style>
   <nav style = "color:black">
 
-  <ul class="topnav" id="myTopnav"style ="width:100%;overflow:hidden;height:44px">
+  <ul class="topnav" id="nav">
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Apples</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Crabapples</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Pineapples</a></li>
@@ -41,7 +57,7 @@ ul.topnav li a:hover {background-color: #555;}
 
     <h1><b>Pineapple</b></h1>
       <p>Pineapple is Delicious. </p>
-        <img src= "http://www.pngall.com/wp-content/uploads/2016/05/Pineapple-PNG-File.png" draggable = "true" height = "40%" width = "25%"> </br>
+        <!--<img src= "http://www.pngall.com/wp-content/uploads/2016/05/Pineapple-PNG-File.png" draggable = "true" height = "40%" width = "25%">!--> </br>
         <b>Favorite Color</b>
         <input id="car" type="text" list="colors" />
           <datalist id="colors">
