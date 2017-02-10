@@ -4,10 +4,10 @@ body{
   background-attachment: fixed;
   background-size: cover;
 }
-p.Paragraph1 {
+p. {
   color:white
 }
 
-h1 {
+h3 {
   color:white
 }
