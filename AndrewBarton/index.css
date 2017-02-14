@@ -10,3 +10,15 @@ p.example {
 h1 {
   color: #ffffff
 }
+.tabcontent {
+  -webkit-animation:fadEffect 1s;
+  animation: fadEffect 1s /* Fading effect takes 1 second */
+}
+@-webkit-keyframes fadEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadEffect {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
