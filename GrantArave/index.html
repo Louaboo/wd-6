@@ -4,39 +4,34 @@
   <head>
     <title>Grant's webpage</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-
   </head>
   <body>
-      <ul class="tab">
-        <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-        <li><a data-toggle="pill" href="#menu1">Offense</a></li>
-        <li><a data-toggle="pill" href="#menu2">Defense</a></li>
-        <li><a data-toggle="pill" href="#menu3">Tank</a></li>
-        <li><a data-toggle="pill" href="#menu4">Support</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3>Home</h3>
-          <p class="Home">Words</p>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3>Offense</h3>
-          <p class="Offense">More Words</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>Defense</h3>
-          <p class="Defense">More Words</p>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-          <h3>Tank</h3>
-          <p class="Tank">More Words</p>
-        </div>
-        <div id="menu4" class="tab-pane fade">
-          <h3>Support</h3>
-          <p class="Support">More Words</p>
-        </div>
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Offense')">Offense</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Defense')">Defense</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tank')">Tank</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Support')">Support</a>
       </div>
-    </div>
+      <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Words</p>
+      </div>
+      <div id="Offense" class="tabcontent">
+        <h3>Offense</h3>
+        <p>Words</p>
+      </div>
+      <div id="Defense" class="tabcontent">
+        <h3>Defense</h3>
+        <p>Words</p>
+      </div>
+      <div id="Tank" class="tabcontent">
+        <h3>Tank</h3>
+        <p>Words</p>
+      </div>
+      <div id="Support" class="tabcontent">
+        <h3>Support</h3>
+        <p>Words</p>
+      </div>
   </body>
 </html>
