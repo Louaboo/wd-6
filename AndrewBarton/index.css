@@ -3,12 +3,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Lobster', cursive;
 }
-p.example {
+p {
   color:white
 }
 h1 {
-  color: #ffffff
+  color: #ffffff;
+  text-align: center;
+  font-size: 250%;
+}
+h3 {
+  color: #ffffff;
+  padding: 25px 0px 0px 0px;
 }
 ul {
   list-style-type: none;
