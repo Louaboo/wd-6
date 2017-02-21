@@ -5,11 +5,11 @@
 Assign the following attributes to visited sites:
   *background color of lightblue
   *text color of navy
-  *underline text decoration
+  *no text decoration
 Assign the following attributes to hovered links:
   *background color of yellow
   *text color of navy
-  *no text decoration
+  *underline text decoration
 Assign the following attributes to selected links:
   *background color of green
   *text color of yellow
@@ -20,7 +20,27 @@ Assign the following attributes to selected links:
     <title>16 CSS</title>
     <style>
     body{font-size: 2em;}
-    
+      a:link{
+        background-color: lightblue;
+        color: green;
+        text-decoration: none;
+      }
+      a:visited{
+        background-color: lightblue;
+        color: navy;
+        text-decoration: none;
+      }
+      a:hover{
+        background-color: yellow;
+        color:navy;
+        text-decoartion: underline;
+      }
+      a.active{
+        background-color: green;
+        color: yellow;
+        text-decoration: line-through;
+      }
+
     </style>
   </head>
   <body>
