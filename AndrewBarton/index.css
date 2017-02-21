@@ -3,49 +3,73 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Lobster', cursive;
 }
-p.example {
+p {
   color:white
 }
 h1 {
-  color: #ffffff
+  color: #ffffff;
+  text-align: center;
+  font-size: 250%;
 }
-.tabcontent {
-  -webkit-animation:fadEffect 1s;
-  animation: fadEffect 1s /* Fading effect takes 1 second */
+h3 {
+  color: #ffffff;
+  padding: 25px 0px 0px 0px;
 }
-@-webkit-keyframes fadEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-@keyframes fadEffect {
-  from {opacity:0;}
-  to {opacity: 1;}
-}
-div.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-div.tab a {
+li {
   float: left;
-  display: block;
-  color: black;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
 }
-div.tab a:hover {
-  background-color: #ddd;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
-div.tab a:focus, .active {
-  background-color: #ccc
+li.dropdown {
+  display: inline-block;
 }
-.tabcontent {
+.dropdown-content {
   display: none;
-  padding:  6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+  color: white;
+}
+.active {
+  background-color: #4caf50;
 }
