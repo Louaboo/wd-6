@@ -5,18 +5,18 @@
   <head>
     <title> This Is Not A Website </title>
   </head>
-  <style>
-  ul.topnav {
+<style>
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0047b3;
+    background-color: #4c91ff;
     transform:skewX(8deg);
-}
-ul.topnav li a {
+      }
+li a:not(.active) {
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 10px 70px;
     text-decoration: none;
@@ -24,16 +24,33 @@ ul.topnav li a {
     font-size: 20px;
     position: relative
 }
-ul.topnav li a:hover {
-    background-color: #555;
-    height:auto;
+li a:hover:not(.active) {
+    background: rgba(195, 203, 216, 0.8);
     text-decoration: underline;
+}
+li a.active:hover{
+    background: rgba(12, 52, 114, 0.3);
+    text-decoration: underline;
+}
+.active {
+      display: block;
+      background-color: #0c3472;
+      text-decoration: underline;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 70px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 20px;
+      position: relative
 }
 #nav {
   display: table;
   width: 100%;
   border-collapse: collapse;
   border: none;
+  position:fixed;
+  top:0;
 }
 #nav ul {
   display: table-row;
@@ -45,11 +62,16 @@ ul.topnav li a:hover {
 #nav li {
 	float: center;
 }
+h1{
+  font-weight: bold;
+}
+h1, h6{
+  display:inline;
+}
 </style>
-  <nav style = "color:black">
-
-  <ul class="topnav" id="nav">
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Apples</a></li>
+  <nav>
+  <ul id="nav">
+    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Crabapples</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Pineapples</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">About us</a></li>
@@ -59,17 +81,27 @@ ul.topnav li a:hover {
 
 
   <body bgcolor = "e6f8ff" style="color:black;">
-
-    <h1><b>Pineapple</b></h1>
-      <p>Pineapple is Delicious. </p>
-        <!--<img src= "http://www.pngall.com/wp-content/uploads/2016/05/Pineapple-PNG-File.png" draggable = "true" height = "40%" width = "25%">!--> </br>
-        <b>Favorite Color</b>
-        <input id="car" type="text" list="colors" />
+  </br></br><h1>Welcome to Our Home</h1>
+    <h6>(page)</h6>
+    <h1>!</h1></br>
+        <img src= "https://ak0.scstatic.net/1/cdn2-cont6.sweetcouch.com/143557262762854435-wipe-shoe-doormat.jpg"> </br>
+      <!--</br><b>Favorite Color</b>
+        <input id="color" type="text" list="colors" />
           <datalist id="colors">
-            <option value="Gray">
-              <option value="Grey">
-                <option value="Gris">
-          </datalist>
+            <option value="Red">
+            <option value="Orange">
+            <option value="Yellow">
+            <option value="Green">
+            <option value="Blue">
+            <option value="Indigo">
+            <option value="Violet">
+            <option value="White">
+            <option value="Black">
+            <option value="Gold">
+            <option value="Silver">
+            <option value="Other">
+          </datalist></br>!-->
+
 
   </body>
 
