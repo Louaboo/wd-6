@@ -2,11 +2,34 @@
 <!--Andrew Barton's web page-->
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Andrew's page of specialness</title>
+    <script src="index.js"></script>
   </head>
   <body>
-    <img src="http://vignette4.wikia.nocookie.net/elderscrolls/images/9/9d/Skyrim_Scenery.jpg/revision/latest?cb=20121130185350" height="2000px" width="2000px" alt=""/>
     <h1>This is my website yes</h1>
-    <p>This is a wonderfull paragraph</p>
+    <p class="example">This is a wonderfull paragraph</p>
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity (event, 'London')" id="defaultOpen">London</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity (event, 'Paris')">Paris</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity (event, 'Tokyo')">Tokyo</a>
+      </div>
+
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>Lodon is the capital city of England</p>
+          <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France</p>
+          <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+          <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
   </body>
 </html>
