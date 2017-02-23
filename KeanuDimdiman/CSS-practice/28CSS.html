@@ -9,28 +9,18 @@ skew <div id=s4> 20 degrees X and 30 degrees Y.
   <head>
     <title>28 CSS</title>
     <style>
-      div{
-        width:100px;
+      div{width:100px;
         height:100px;
         margin: 50px;
-        border: 1px solid black;
-      }
-      #s1{
-        background-color: red;
-
-      }
-      #s2{
-        background-color: blue;
-
-      }
-      #s3{
-        background-color: green;
-
-      }
-      #s4{
-        background-color: yellow;
-
-      }
+        border: 1px solid black;}
+      #s1{background-color: red;
+        transform: translate(100px,200px);}
+      #s2{background-color: blue;
+        transform: rotate(45deg);}
+      #s3{background-color: green;
+        transform: scale(.5,2);}
+      #s4{background-color: yellow;
+        transform: skew(20,30)}
     </style>
   </head>
   <body>
