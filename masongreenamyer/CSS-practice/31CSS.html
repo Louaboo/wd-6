@@ -9,11 +9,14 @@ background and transform changes to <div>.-->
         width:100px;
         height:100px;
         background-color: red;
-
+        transition: height 2s;
+        transform: skewX(10deg)
       }
       div:hover{
         background-color: blue;
         transform: rotate(180deg);
+        transform:skewX(10deg);
+        height:200px;
       }
     </style>
   </head>
