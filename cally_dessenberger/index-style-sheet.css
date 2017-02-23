@@ -8,4 +8,8 @@
  position: absolute;
  left: 15px;
 top: 15px;}
-<a href="https://en.wikipedia.org/wiki/Tiger" class="button"> Tigers are amazing!</a>
+p {
+  color: #034c7d;
+  background-color:#fca183;
+  border: 13px double #0c598d; margin: 1px;
+}
