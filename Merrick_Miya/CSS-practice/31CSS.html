@@ -5,16 +5,12 @@ background and transform changes to <div>.-->
   <head>
     <title>31 CSS</title>
     <style>
-      div{
-        width:100px;
+      div{width:100px;
         height:100px;
         background-color: red;
-
-      }
-      div:hover{
-        background-color: blue;
-        transform: rotate(180deg);
-      }
+        transition: background 2s, transform 2s;}
+      div:hover{background-color: blue;
+        transform: rotate(180deg);}
     </style>
   </head>
   <body>
