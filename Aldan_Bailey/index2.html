@@ -1,0 +1,186 @@
+<!doctype html>
+<!--Hailey Church Is so mean to me. She abuses me every class period. And she never gives me rides anymore in her slugbug because she is too cool for me!-->
+<hmtl>
+  <head>
+    <Title>Hunting</title>
+    </head>
+<body bgcolor="008B8B"
+      <h1>
+      <p align="center">
+
+          <font color="	#B8860B" size="20"><h2><pre> A  L  D  A  N  S    L  I  F  E</PRE></h2></font>
+          </h1>
+        </p>
+
+      <h3>
+
+          <h1><p align="left" class="cursive" STYLE="border-style: outset; border-color: #FF69B4"; align="center"><font color="	#FF1493" size="20">Things I <strong>love</strong></P></font></h1>
+
+          <ul>
+              <font color="#CD853F">
+                <strong><li><h6><a href="index.html">Dirt Biking</a><h6></li>
+
+                <li><h5> Hunting<h5></li>
+
+                <li><h4>Weight lifting<h4></li>
+
+                <li><h3>Mudding<h3></li>
+
+                <li><h2>Making out<h2></li>
+
+                  <li> <h1>My truck<h1></li></strong>
+
+              </ul></font>
+<br>
+              <style>
+              h1 {
+                  text-shadow: 2px 2px 5px red;
+              }
+              </style>
+
+              <style>
+              h2 {
+                  text-shadow: 2px 2px 5px blue;
+              }
+              </style>
+              <br>
+<style>
+              h3 {
+                  text-shadow: 2px 2px	#FFFF00;
+              }
+              </style>
+              <br>
+
+              <style>
+                            h4 {
+                                text-shadow: 2px 2px #00FFFF;
+                            }
+                            </style>
+                            <style>
+                            h5 {
+                                text-shadow: 2px 2px 5px green;
+                            }
+                            </style>
+                            <style>
+                            h6 {
+                                text-shadow: 2px 2px #FF1493;
+                            }
+                            </style>
+
+
+              </head>
+              <P STYLE="border-style: dotted; border-color: #ffccff"; align="center"><font size="20" align="center"><h1><pre>Dirt Biking    Dirt Biking   Dirt Biking   Dirt Biking   Dirt biking</pre></h1></p></font>
+                <br>
+                <P STYLE="border-style: dotted; border-color: #ffccff";> </p>
+    <marquee behavior="scroll" direction="right"><img src="Jump.PNG" width="520" height="404"></marquee></body>
+    <br>
+      <marquee behavior="scroll" direction="left"><img src="Jump_1.PNG" width="520" height="404"></marquee></body>
+      <br>
+        <marquee behavior="scroll" direction="right"><img src="Jump_2.PNG" width="420" height="404"></marquee></body>
+        <br>
+          <marquee behavior="scroll" direction="left"><img src="Jump_3.PNG" width="520" height="404"></marquee></body>
+          <img src="Dirtbike.jpg" alt="CR-85" style="width:404px;height:328px;" align="left">
+          <img src="Dirtbike_1.jpg" alt="CR-85" style="width:404px;height:328px;" align="right">
+          <img src="Jump_4.PNG" alt="KX-450" style="width:304px;height:328px;" align="center">
+          <img src="Sand.jpg" alt="Cr-85" style="width:350px;height:328px;" align="center">
+          <img src="Jump_5.PNG" alt="Cr-85" style="width:304px;height:328px;" align="center">
+<br>
+<br>
+<marquee behavior="scroll" direction="right"><embed src="Dirtbikesong.mp3" autostart="true" loop="true"></marquee>
+  <br>
+  <style type="text/css">
+<!--
+.mouse
+{
+position:absolute;
+visibility:visible;
+top:-50px;
+font-size:10px;
+font-family:comic sans ms;
+font-weight:bold;
+color:black;
+}
+body
+{
+width:100%;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+-->
+</style>
+<script>
+var x,y
+var step=15
+var doit=0
+var text="Aldan's Life "
+text=text.split("")
+
+var xpos=new Array()
+for (i=0;i<=text.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=text.length-1;i++) {
+	ypos[i]=-50
+}
+
+function anddo(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	doit=1
+}
+
+function trail() {
+	if (doit==1 && document.all) {
+    	for (i=text.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+
+		for (i=0; i<text.length-1; i++) {
+    		var place = eval("span"+(i)+".style")
+    		place.posLeft=xpos[i]
+			place.posTop=ypos[i]
+    	}
+	}
+
+	else if (doit==1 && document.layers) {
+    	for (i=text.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+
+		for (i=0; i<text.length-1; i++) {
+    		var place = eval("document.span"+i)
+    		place.left=xpos[i]
+			place.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("trail()",30)
+}
+
+</script>
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=text.length-1;i++) {
+    document.write("<span id='span"+i+"' class='mouse'>")
+	document.write(text[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = anddo;
+
+// - End of JavaScript - -->
+</script>
+<br>
+
+    </html>
