@@ -2,11 +2,13 @@ body {
   background-image: url(https://i.ytimg.com/vi/de78Odrw6KE/maxresdefault.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   font-family: 'Lobster', cursive;
+  overflow: scroll;
 }
 p {
-  color:white
+  color:white;
 }
 h1 {
   color: #ffffff;
