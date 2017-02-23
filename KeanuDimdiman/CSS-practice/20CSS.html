@@ -7,26 +7,21 @@ Add a horizontal scroll bar to <div id=hscroll>.-->
   <head>
     <title>20 CSS</title>
     <style>
-      #scroll{
-        background-color: #eee;
+      #scroll{background-color: #eee;
         width: 200px;
         height: 110px;
         border: 1px dotted black;
-      }
-      #chop{
-        background-color: lightblue;
+        overflow: scroll;}
+      #chop{background-color: lightblue;
         width: 200px;
         height: 200px;
-
-      }
-      #hscroll{
-        background-color: #eee;
+        overflow: hidden;}
+      #hscroll{background-color: #eee;
         width: 150px;
         height: 70px;
         border: 1px dotted black;
         white-space: nowrap;
-          position: horizontal;
-      }
+        overflow-x: scroll;}
     </style>
   </head>
   <body>
