@@ -7,9 +7,21 @@
   <body>
     <h1>Welcome, to the most amazing website you have ever seen</h1>
     <style>
-body {
-background-image: url("giphy.gif");
-background-color: #cccccc;
+    /* The animation code */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* The element to apply the animation to */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
 }
 </style>
   <iframe src="http://www.youtube.com/embed/V047etpApmA?autoplay=1" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
