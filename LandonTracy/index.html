@@ -3,7 +3,88 @@
   <head>
     <title>Uncle Terry</title>
   </head>
+<style>
+body {font-family: "Lato", sans-serif;
+    background-color: #738F9B;}
+.sidenav {height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;}
+.sidenav a {padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}}
+  h2 {text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-variant: small-caps;
+    background-color: #70b4d1;}
+  h3 {text-align: center;}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"></a>
+  <a href="#">Supply</a>
+  <a href="#">People</a>
+  <a href="#">Hamburgers</a>
+</div>
+
+<h2>Dr. Caboose</h2>
+<h3>What's better than 1 Mozzerella Stick? 37 Mozzerella Sticks!</h3>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!doctype html>
+<html>
+  <head>
+    <title>Uncle Terry</title>
+  </head>
   <style>
+
   h1{width: 500px;
     margin:auto;
     font-family: Verdana;}
@@ -22,6 +103,7 @@ li a {display: block;
     text-decoration: none;}
 li a:hover {background-color: #111;}
     </style>
+
   <body>
 <h1>Dr. Tracy's Website </h1>
 <ul>
@@ -31,86 +113,7 @@ li a:hover {background-color: #111;}
   <li><a href="#Circus">Circus</a></li>
 </ul>
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-->
 <!--Teleporters are now 80% off!
 <html>
   <head>
