@@ -1,10 +1,12 @@
 .button {background-color:#034c7d;
    border: double;
    color: #b86614;
-   padding: 30px 30px;
+   padding: 20px 20px;
    text-align:left;text-decoration: none;
    display: inline-block;
-   font-size: 15 margin:4px 2px; cursor: pointer;
+   font-size: 30px;
+   margin:4px 2px;
+   cursor: pointer;
  position: absolute;
  left: 15px;
 top: 15px;}
@@ -12,4 +14,61 @@ p {
   color: #034c7d;
   background-color:#fca183;
   border: 13px double #0c598d; margin: 1px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    font-style: italic;
+}
+#grad1 {
+height: 100px;
+background: linear-gradient(#b86614, white, #b86614, black, #b86614,
+  white,#b86614, black, #b86614, white);
+}
+h1 {
+  color:#804d00;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 40px;
+  text-decoration: underline;
+}
+p2 {
+  color: #034c7d;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 8px;
+    font-style: italic;
+    opacity: .5
+}
+.dropbtn {
+    background-color: #034c7d;
+    color:  #b86614;
+    font-size: 30px;
+    border: double;
+     margin:4px 2px;
+       padding: 16px;
+    cursor: pointer;
+    font-family: 'Architects Daughter', cursive;
+    font-style: italic;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
