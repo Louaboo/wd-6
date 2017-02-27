@@ -1,0 +1,9 @@
+h1{
+  color:#034c7d;
+  background-color:blue;
+}
+#grad1 {
+height: 100px;
+background: linear-gradient(#b86614, white, #b86614,
+  black, #b86614, white,#b86614, black, #b86614, white);
+}
