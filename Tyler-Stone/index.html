@@ -7,26 +7,32 @@
   <body>
     <h1>Welcome, to the most amazing website you have ever seen</h1>
     <style>
-    /* The animation code */
-    @keyframes {
-        0%   {background-color:red; left:0px; top:0px;}
-        25%  {background-color:yellow; left:200px; top:0px;}
-        50%  {background-color:blue; left:200px; top:200px;}
-        75%  {background-color:green; left:0px; top:200px;}
-        100% {background-color:red; left:0px; top:0px;}
-    }
+    #myContainer {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+  }
+  #myAnimation {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: red;
+  }
+  var id = setInterval(frame, 5);
 
-    /* The element to apply the animation to */
-    div {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        background-color: red;
-        animation-name: example;
-        animation-duration: 4s;
+function frame() {
+    if (/* test for finished */) {
+        clearInterval(id);
+    } else {
+        /* code to change the element style */
     }
+}
 </style>
-  <iframe src="http://www.youtube.com/embed/V047etpApmA?autoplay=1" width="720" height="480" frameborder="0" allowfullscreen></iframe>
-</a>
+<h1>My First JavaScript Animation</h1>
+
+<div id ="myContainer">
+    <div id ="myAnimation">My animation will go here</div>
+</div>
 </body>
 </html>
