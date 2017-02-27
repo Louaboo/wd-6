@@ -12,27 +12,39 @@
       height: 400px;
       position: relative;
       background: yellow;
-  }
-  #myAnimation {
+    }
+    #myAnimation {
       width: 50px;
       height: 50px;
       position: absolute;
-      background: red;
-  }
-  var id = setInterval(frame, 5);
-
-function frame() {
-    if (/* test for finished */) {
-        clearInterval(id);
-    } else {
-        /* code to change the element style */
+      background-color: red;
     }
-}
-</style>
-<h1>My First JavaScript Animation</h1>
+    </style>
+    <body>
 
-<div id ="myContainer">
-    <div id ="myAnimation">My animation will go here</div>
-</div>
+    <p>
+    <button onclick="myMove()">Click Me</button>
+    </p>
+
+    <div id ="myContainer">
+    <div id ="myAnimation"></div>
+    </div>
+
+    <script>
+    function myMove() {
+      var elem = document.getElementById("myAnimation");
+      var pos = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++;
+          elem.style.top = pos + 'px';
+          elem.style.left = pos + 'px';
+        }
+      }
+    }
+    </script>
 </body>
 </html>
