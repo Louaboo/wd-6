@@ -60,10 +60,6 @@ li a.active:hover{
   margin: 0;
   float: center;
 }
-body{
-  margin-top: 50px;
-  margin-bottom: 75px;
-}
 h1{
   font-weight: bold;
 }
@@ -106,6 +102,26 @@ a.foot:link{
   transform: scaleX(-1);
   filter: FlipH; /* IE 6-7-8 */
 }
+body{
+  margin:50px 0px 75px 0px;
+  
+  background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 8s ease infinite;
+  animation: background-cycle 8s ease infinite;
+}
+  @-webkit-keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+
 </style>
   <nav>
   <ul id="nav">
@@ -118,7 +134,7 @@ a.foot:link{
   </nav>
 
 
-  <body bgcolor = "e6f8ff" style="color:black;">
+  <body>
     <h1>Welcome to Our Home</h1>
     <h6>(page)</h6>
     <h1>!</h1></br>

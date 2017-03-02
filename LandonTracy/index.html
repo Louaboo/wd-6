@@ -5,7 +5,13 @@
   </head>
 <style>
 body {font-family: "Lato", sans-serif;
-    background-color: #738F9B;}
+    background-color: #738F9B;
+    overflow:scroll;
+    background-image: url("Pictures/windows_xp.jpg");
+    overflow: scroll;
+    background-repeat: no-repeat;
+    background-position:  center right;
+    background-size:35%;}
 .sidenav {height: 100%;
     width: 0;
     position: fixed;
@@ -41,7 +47,9 @@ body {font-family: "Lato", sans-serif;
   h3 {text-align: center;}
 </style>
 <body>
-
+  <audio controls autoplay>
+    <source src="pictures/windows_music.mp3" type="audio/mpeg">
+  </audio>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#"></a>
@@ -56,12 +64,9 @@ body {font-family: "Lato", sans-serif;
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
+    document.getElementById("mySidenav").style.width = "250px";}
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+    document.getElementById("mySidenav").style.width = "0";}
 </script>
 
 </body>
