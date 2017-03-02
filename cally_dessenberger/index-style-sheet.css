@@ -2,10 +2,11 @@
    border: double;
    border-radius: 15px;
    color: #b86614;
-   padding: 20px 20px;
+   padding: 15px 15px;
    text-align:left;text-decoration: none;
    display: inline-block;
    font-size: 30px;
+   font-family: 'Architects Daughter', cursive;
    margin:4px 2px;
    cursor: pointer;
  position: absolute;
@@ -46,13 +47,13 @@ p2 {
     border: double;
     border-radius: 15px;
      margin:4px 4px;
-       padding: 20px;
+       padding: 15px;
     cursor: pointer;
     font-family: 'Architects Daughter', cursive;
     font-style: italic;
 }
 .dropdown {
-    position: relative;
+    position: fixed;
     display: inline-block;
 }
 .dropdown-content {
