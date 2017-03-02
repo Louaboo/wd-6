@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--Kaysen Hansen's Web Page-->
+<html>
+
+  <head>
+    <title> This Is Not A Website </title>
+  </head>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4c91ff;
+    transform:skewX(8deg);
+      }
+li a:not(.active) {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 70px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    position: relative
+}
+li a:hover:not(.active) {
+    background: rgba(195, 203, 216, 0.8);
+    text-decoration: underline;
+}
+li a.active:hover{
+    background: rgba(12, 52, 114, 0.3);
+    text-decoration: underline;
+}
+.active {
+      display: block;
+      background-color: #0c3472;
+      text-decoration: underline;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 70px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 20px;
+      position: relative
+}
+#nav {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  position:fixed;
+  top:0;
+}
+#nav ul {
+  display: table-row;
+}
+#nav li {
+  display: table-cell;
+  margin: 0;
+  float: center;
+  width: 25%;
+  overflow: visible;
+}
+h1{
+  font-weight: bold;
+}
+h3{
+  display: inline-block;
+}
+h1, h6{
+  display:inline;
+}
+footer {
+  display: inline-block;
+  background-color: #0c3472;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width : 100%;
+  text-align: center;
+}
+a.foot:visited{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+a.foot:link{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+#right{
+  float : right;
+  margin-right: 10px;
+  transform:
+}
+#left{
+  float : left;
+  margin-left: 10px;
+}
+.mirror{
+  display: inline-block;
+  transform: scaleX(-1);
+  filter: FlipH; /* IE 6-7-8 */
+}
+body{
+  margin:50px 0px 75px 0px;
+
+  background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 8s ease infinite;
+  animation: background-cycle 8s ease infinite;
+}
+  @-webkit-keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+table{
+  border: 2px dotted blue;
+  width : 100%;
+  display: table;
+}
+th{
+width:100%;
+text-align: center;
+}
+tr{
+  width:100%;
+  text-align: center;
+}
+</style>
+  <nav>
+  <ul id="nav">
+    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Pineapples</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">About us</a></li>
+  </ul>
+  </nav>
+
+  <body>
+    <h1>Welcome to Our Jokes</h1><h6>(page)</h6><h1>!</h1></br>
+    <h3> Hover over the left sides to uncover the answer!
+
+      <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$50</td>
+      </table>
+
+<footer>
+<h3 id="left"> Built by: Kaysen Hansen</h3>
+<a class="foot" href="#top">Go to top</a>
+<h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>
+</footer>
+
+</body>
+
+</html>
