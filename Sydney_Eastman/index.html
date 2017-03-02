@@ -4,15 +4,61 @@
  <head>
    <title>Hello?</title>
    <style>
-   body {
-     background-image: url("http://www.westernspring.co.uk/wp-content/uploads/2014/01/Hobbit-1.png");
-     background-size: 365px 538px;
-     background-repeat: round;
-    }
+   ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color: #FF69B4;
+   }
+
+   li {
+       float: left;
+   }
+
+   li a, .dropbtn {
+       display: inline-block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+
+   li a:hover, .dropdown:hover .dropbtn {
+       background-color: black;
+   }
+
+   li.dropdown {
+       display: inline-block;
+   }
+
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+   }
+
+   .dropdown-content a {
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+       text-align: left;
+   }
+
+   .dropdown-content a:hover {background-color: #f1f1f1}
+
+   .dropdown:hover .dropdown-content {
+       display: block;
+   }
    .shadow {
-    text-shadow: 3px 2px #778899;
-    font-family: fantasy;
+    text-shadow: 4px 4px #778899;
+    font-family: monospace;
     font-size: 25px;
+    text-align: center;
    }
    body {
      background-color: #C0C0C0;
@@ -20,28 +66,49 @@
      border-radius: double #000000;
    }
    h1 {
-     background-color: #DC143C;
+     background-color: #FF69B4;
      color: #000000;
      text-shadow: 4px 4px #778899;
+     font-family: monospace;
      text-align: center;
      letter-spacing: 4px;
    }
    p {
      text-align: right;
-     color: #000000;
+     color: #00FFFF;
      text-transform: inherit;
      letter-spacing: 4px;
     }
-    .shadow2 {
+    h2 {
+      background-color: #FF69B4;
+      color: #000000;
+      font-family: monospace;
       font-size: 25px;
-      color: #7FFF00;
-      font-family: fantasy; font-size: 25px;
+      text-align: center;
+      text-shadow: 4px 4px #778899;
+      letter-spacing: 4px;
     }
    </style>
  </head>
  <body>
+   <ul>
+     <li><a href="#home">Home</a></li>
+     <li><a href="#quotes">Quotes</a></li>
+     <li class="dropdown">
+       <a href="#" class="dropbtn">Dropdown</a>
+       <div class="dropdown-content">
+         <a href="#">Sydney Eastman</a>
+         <a href="#">Link 2</a>
+         <a href="#">Link 3</a>
+       </div>
+     </li>
+   </ul>
    <h1>Quotes:</h1>
-   <p class="shadow">"It's okay to be a glowstick.<br>Sometimes you have to break<br> before you can shine."</br><br>"You were born to be real, not perfect."</br></p>
-   <p class="shadow2">"Home is now behind you, the world is ahead."</p>
+  <p class="shadow">"It's okay to be a glowstick.<br>Sometimes you have to break<br> before you can shine."</br><br>"You were born to be real, not perfect."</br></p>
+  <p class="shadow">"Home is now behind you, the world is ahead."</p>
+  <h2>Do you ever feel alone?</h1>
+  <p class="shadow">Hurt and pain:<br>Hurt and pain.</br><br> There's much to gain.</br><br>Peace and love.</br>It's all the same.</br><br>Confusion and doubt.</br>We're not without.<br></p>
+  <p class="shadow">We weep, we cry.<br>We plead, we try.</br>We laugh, we smile.<br>Only to be hurt</br><br>by one last trial.</br><br>Life is a lesson,</br>so learn it well.<br>Maybe, one last day,</br>you can tell it's tale.<br>Lora</br></p>
+</div>
 </body>
 </html>
