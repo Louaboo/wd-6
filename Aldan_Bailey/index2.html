@@ -5,14 +5,9 @@
     <Title>Hunting</title>
     <style>
 
-    body {
-          position: relative;
-      background-image: url("DuckHunt.jpg");background-repeat: no-repeat;
-  background-attachment: fixed; background-size: cover;
-          animation-name: example;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;;
+    body {background-image: url(DuckHunt.jpg);
+      background-repeat: auto;
+       background-size: cover;
 }
 
 h1 {
@@ -22,6 +17,7 @@ h1 {
 h2 {
     text-shadow: 2px 2px 5px blue;
 }
+
 
 h3 {
     text-shadow: 2px 2px	#FFFF00;
@@ -35,23 +31,114 @@ h5 {
 h6 {
     text-shadow: 2px 2px #FF1493;
 }
-#border{
-        border-style:groove;
-        border-color: #FF1493;
-        align:center;
-        font-size: 20px;
-        }
-      </style>
+#border{ border:double 15px #000000;
+-moz-border-radius-topleft: 75px;
+-moz-border-radius-topright:0px;
+-moz-border-radius-bottomleft:0px;
+-moz-border-radius-bottomright:75px;
+-webkit-border-top-left-radius:75px;
+-webkit-border-top-right-radius:0px;
+-webkit-border-bottom-left-radius:0px;
+-webkit-border-bottom-right-radius:75px;
+border-top-left-radius:75px;
+border-top-right-radius:0px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:75px;
+
+ -moz-box-shadow: 66px 49px 45px #177a66;
+-webkit-box-shadow: 66px 49px 45px #177a66;
+box-shadow: 66px 49px 45px #177a66;}
+
+
+ul.a {
+List-style-image: url(Flag.PNG); height: 10px;
+Width 10%;
+List-style-position: inside;
+}
+ul.b {
+List-style-type:circle;
+List-style-position: inside;
+}
+p {Background-color: rgb(135,206,235);
+Vertical-align: -10px;}
+p.small {
+font-variant: smapll-caps;}
+
+div h2{
+-webkit-animation: cssAnimation 6s 15 ease-in;
+-moz-animation: cssAnimation 6s 15 ease-in;
+-o-animation: cssAnimation 6s 15 ease-in;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
+}
+
+
+div h1, h3, h4, h5, h6 { -webkit-animation: cssAnimation1 5s 16 ease;
+-moz-animation: cssAnimation1 5s 16 ease;
+-o-animation: cssAnimation1 5s 16 ease;
+}
+@-webkit-keyframes cssAnimation1 {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
+}
+@-moz-keyframes cssAnimation1 {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
+}
+@-o-keyframes cssAnimation1 {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px);}
+
+
+.rainbow {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  font: normal normal bold 70px/normal "Bad Script", Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 0 0 rgb(217,31,38) , 6px 0 0 rgb(226,91,14) , 9px 0 0 rgb(245,221,8) , 12px 0 0 rgb(5,148,68) , 15px 0 0 rgb(2,135,206) , 18px 0 0 rgb(4,77,145) , 21px 0 0 rgb(42,21,113) ;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rainbow:hover {
+  text-shadow: -3px 0 0 rgb(217,31,38) , -6px 0 0 rgb(226,91,14) , -9px 0 0 rgb(245,221,8) , -12px 0 0 rgb(5,148,68) , -15px 0 0 rgb(2,135,206) , -18px 0 0 rgb(4,77,145) , -21px 0 0 rgb(42,21,113) ;
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+     </style>
     </head>
     <body>
 
-          <font color="	#B8860B" size="20"><h2><pre> A  L  D  A  N  S    L  I  F  E</PRE></h2></font>
+              <div><font color="#B8860B" size="20"><h2><pre> A  L  D  A  N  S    L  I  F  E</PRE><h2></font></div>
 
 
           <h3 align="left" class="cursive"; align="right"><font color="#39CCCC" size="20">Things I love</font></h3>
 
           <ul>
               <font color="#CD853F">
+<div>
                 <strong><li><h6><a href="index.html"><pre>Dirt Biking</pre></a><h6></li>
 
                 <li><h5> Hunting<h5></li>
@@ -60,20 +147,40 @@ h6 {
 
                 <li><h3>Mudding<h3></li>
 
-                <li><h2><pre>Making out</pre><h2></li>
+                <li><h4><pre>Making Out</pre><h4></li>
 
-                  <li> <h1><pre>My truck</pre><h1></li></strong>
+
+		<h1>
+		<li>
+		<pre>My truck</pre>
+		</li>
+		</h1>
+		</div>
 
               </ul></font>
-<br>
+		<br>
               <br>
               <br>
 
-              <h1 id='border'><pre>H U N T I N G   H U N T I N G   H U N T I N G   H U N T I N G  </pre></h1>
+              <h1 id='border'><pre> H U N T I N G    H U N T I N G    H U N T I N G      H U N T I N G   H U N T I N G   H U N T I N G </pre></h1>
+
 <p>
-  I have been hunting my entire life. I started when I was really young; and fell in love ever since. I love to:
-  <li>Water Fowl hunt</li>
-    <li>
-<br>
+<audio autoplay loop controls>
+  <source src="LOVEIT.mp3".style.visibility = "hidden" type="audio/mp3">
+  </audio>
+<h2><font size="8">
+  I have been hunting my entire life. I started when I was really young; and fell in love ever since. I love to go:
+</font></h2>
+  <ul class="a">
+<li><h1>Water Fowl hunting</h1></li>
+    <li><h1>Deer Hunting</h1></li>
+<li><h1> Elk Hunting</h1></li>
+<li><h1>Coon Hunting</h1></li>
+<li><h1> Sandhill Crane Hunting</h1></li>
+<li><h1> Coyote Hunting</h1></li>
+<li><h1> Trapping</h1><li>
+</ul#>
+</p>
+
 </body>
     </html>
