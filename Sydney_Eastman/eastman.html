@@ -3,6 +3,7 @@
  <head>
    <title>Page 2</title>
    <style>
+
    ul {
        list-style-type: none;
        margin: 0;
@@ -59,28 +60,51 @@
     font-size: 25px;
     text-align: center;
    }
+
    body {
-     background-image: url("http://www.westernspring.co.uk/wp-content/uploads/2014/01/Hobbit-1.png");
+     background-image: url("http://plusquotes.com/images/wd_quote_0071.jpg");
      background-size: 365px 538px;
      background-repeat: repeat-x,
      background-position: top left;
-    }
 
-h1 {
-  font-family: cursive;
-  text-align: center;
-  color: #008B8B;
-}
-p{
-  font-family: cursive;
-  text-align: center;
-  color: yellow;
-  font-size: 23px;
-  letter-spacing: 3px;
-}
-}
+    }
+    h1 {
+      padding-top: 20px;
+      padding-right: 20px;
+      font-family: cursive;
+      text-align: center;
+      color: #008B8B;
+    }
+    h2{
+      font-family: cursive;
+      text-align: center;
+      color: #008B8B;
+    }
+    p{
+      font-family: cursive;
+      text-align: center;
+      color: hotpink;
+      font-size: 23px;
+      letter-spacing: 3px;
+    }
+    #id{
+      padding-bottom: 50px;
+      width:200px;
+      height:200px;
+      position: relative;
+      background-color: hotpink;
+      animation-name: example;
+      animation-duration: 10s
+    }
+    @keyframes example {
+        0%   {background-color: hotpink; left:0px; top:0px;}
+        25%  {background-color: purple; left:0px; top:200px;}
+        50%  {background-color: hotpink; left:200px; top:200px;}
+        75%  {background-color: purple; left:200px; top:0px;}
+        100% {background-color: hotpink; left:0px; top:0px;}
  </style>
  </head>
+
  <body>
    <ul>
      <li><a href="index.html">Home</a></li>
@@ -94,7 +118,7 @@ p{
        </div>
      </li>
    </ul>
-   <h1>Welcome to page 2!</h1>
-   <p>I am happy to present...</p>
+   <h1>Animation</h1>
+   <div id="id"></div>
  </body>
  </html>
