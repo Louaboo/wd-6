@@ -123,24 +123,31 @@ body{
       50%{background-position:100% 5%}
       100%{background-position:0% 96%}
   }
+  th, tr, td{
+    border: 3px solid blue;
+
+}
 table{
-  border: 2px dotted blue;
-  width : 100%;
-  display: table;
+    width: 100%;
 }
-th{
-width:100%;
-text-align: center;
+tr:hover:not(.table-head){
+    background-color: black;
+    color: white;
 }
-tr{
-  width:100%;
-  text-align: center;
+.cover{
+    background-color: black;
 }
+.table-head{
+  background-color: transparent;
+}
+
+
+
 </style>
   <nav>
   <ul id="nav">
-    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</a></li>
+    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Pineapples</a></li>
     <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">About us</a></li>
   </ul>
@@ -152,16 +159,69 @@ tr{
 
       <table>
         <tr>
-          <th>Month</th>
-          <th>Savings</th>
+          <th class="table-head">Joke</th>
+          <th class="table-head">Answer</th>
         </tr>
         <tr>
-          <td>January</td>
-          <td>$100</td>
+          <td>There's only 10 types of people.</td>
+          <td class="cover">Those who understand binary and those who don't.</td>
         </tr>
         <tr>
-          <td>February</td>
-          <td>$50</td>
+          <td>What does the military use acid for?</td>
+          <td class="cover">To neutralize the enemy base.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="cover"></td>
+        </tr>
+        <tr>
+          <td>If your arteries clog on a golf course,</td>
+          <td class="cover">do you have a stroke?</td>
+        </tr>
+        <tr>
+          <td>Am I perfect?</br>Am I striving to be better every day?</td>
+          <td class="cover">No</br>Also No.</td>
+        </tr>
+        <tr>
+          <th class="table-head">Pun</th>
+          <th class="table-head">Answer</th>
+        </tr>
+        <tr>
+          <td>I forgot how to throw a boomerang...</td>
+          <td class="cover">but it came back to me</td>
+        </tr>
+        <tr>
+          <td>I had a joke about construction...</td>
+          <td class="cover">but I'm still working on it</td>
+        </tr>
+        <tr>
+          <td>A magician was walking down the street...</td>
+          <td class="cover">then he turned into a grocery store.</td>
+        </tr>
+        <tr>
+          <td>I'm reading a book about Gravity...</td>
+          <td class="cover">it's impossible to put down.</td>
+        </tr>
+        <tr>
+          <td>There's a new type of broom...</td>
+          <td class="cover">it's sweeping the nation.</td>
+        </tr>
+        <tr>
+          <td>Velcro...</td>
+          <td class="cover">what a rip off.</td>
+        </tr>
+        <tr>
+          <td>The rotation of the earth...</td>
+          <td class="cover">really make my day.</td>
+        </tr>
+        <tr>
+          <td>To the guy who invented zero...</td>
+          <td class="cover">thanks for nothing.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="cover"></td>
+        </tr>
       </table>
 
 <footer>
