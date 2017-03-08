@@ -10,12 +10,14 @@ body {
 p {
   color:white;
   text-indent: 20px;
-  font-size: 150%;
 }
 h1 {
   color: #ffffff;
   text-align: center;
   font-size: 350%;
+}
+img.sidewinder {
+    float: left;
 }
 h3 {
   color: #ffffff;
