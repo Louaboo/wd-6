@@ -39,7 +39,7 @@ ul {
     overflow: hidden;
     background: linear-gradient(#b86614, white, #b86614,
       black, #b86614, white,#b86614, black, #b86614, white);
-    position: absolute;
+    position: relative;
     width: 680px;
     height:75px;
     font-size: 40px;
