@@ -20,9 +20,10 @@
       padding: 0;
       overflow: hidden;
       background-color:#f08ff0;
+
     }
     li {
-      float:left;
+      float: left;
     }
     li a {
     display: block;
@@ -36,7 +37,16 @@ li a:hover {
     background-color: #ca1cca;
     color: white;
 }
-    h1 {
+li a.active {
+    background-color: #cc0066;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #d65cad;
+    color: white;
+  }
+     h1{
       background-color: #8FBC8F;
       width: 600px;
       margin: auto;
@@ -54,7 +64,7 @@ li a:hover {
   <body>
 <h1>Welcome to Amanda's World</h1>
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
     <li><a href= "firstpage.html">First</a></li>
 </body>
 </html>
