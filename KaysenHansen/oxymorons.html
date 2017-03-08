@@ -134,11 +134,19 @@ tr:hover:not(.table-head){
     background-color: black;
     color: white;
 }
+
 .cover{
     background-color: black;
 }
+.uncover{
+    background-color:transparent
+}
+}
 .table-head{
   background-color: transparent;
+}
+#mycover{
+  background-color: black;
 }
 
 
@@ -155,53 +163,66 @@ tr:hover:not(.table-head){
 
   <body>
     <h1>Welcome to Our Jokes and Puns</h1><h6>(page)</h6><h1>!</h1></br>
-    <h3> Hover over the left sides to uncover the answer!
+    <h3> Hover over the line to uncover the answer!
+
+
+      <button onclick="cover()">Cover All Answers</button>
+      <button onclick="uncover()">Uncover All Answers</button>
+
+      <script>
+      function cover() {
+          document.getElementById("mycover").style.backgroundColor = "black"
+      }
+      function uncover() {
+          document.getElementById("mycover").style.backgroundColor = "transparent"
+      }
+      </script>
 
       <table>
         <tr>
           <th class="table-head">Oxymorons for Morons!</th>
         </tr>
         <tr>
-          <td class="cover">Is it good if a vacuum really sucks?</td>
+          <td id="mycover">Is it good if a vacuum really sucks?</td>
         </tr>
         <tr>
-          <td class="cover">Why is the third hand on a watch called the second hand?</td>
+          <td id="mycover">Why is the third hand on a watch called the second hand?</td>
         </tr>
         <tr>
-          <td class="cover">If a word is misspelled in the dictionary, where did he find the words?</td>
+          <td id="mycover">If a word is misspelled in the dictionary, where did he find the words?</td>
         </tr>
         <tr>
-          <td class="cover">If Webster wrote the first dictionary, where'd he find the words?</td>
+          <td id="mycover">If Webster wrote the first dictionary, where'd he find the words?</td>
         </tr>
         <tr>
-          <td class="cover">Why do we say something is out of whack? What the heck is a whack?</td>
+          <td id="mycover">Why do we say something is out of whack? What the heck is a whack?</td>
         </tr>
         <tr>
-          <td class="cover">Why does "slow down" and "slow up" mean the same thing?</td>
+          <td id="mycover">Why does "slow down" and "slow up" mean the same thing?</td>
         </tr>
         <tr>
-          <td class="cover">Why does "fat chance" and "slim chance" mean the same thing?</td>
+          <td id="mycover">Why does "fat chance" and "slim chance" mean the same thing?</td>
         </tr>
         <tr>
-          <td class="cover">Why do "tug" boats push their barges?</td>
+          <td id="mycover">Why do "tug" boats push their barges?</td>
         </tr>
         <tr>
-          <td class="cover">Why do we sing <i> take me out to the ballgame</i> when we are already there?</td>
+          <td id="mycover">Why do we sing <i> take me out to the ballgame</i> when we are already there?</td>
         </tr>
         <tr>
-          <td class="cover">Why are they called "stands" when they are made for sitting?</td>
+          <td id="mycover">Why are they called "stands" when they are made for sitting?</td>
         </tr>
         <tr>
-          <td class="cover">Why is it called "after dark" when it is really "after light"?</td>
+          <td id="mycover">Why is it called "after dark" when it is really "after light"?</td>
         </tr>
         <tr>
-          <td class="cover">Doesn't "expecting the unexpected" make the unexpected expected meaning you are just expecting the expected?</td>
+          <td id="mycover">Doesn't "expecting the unexpected" make the unexpected expected meaning you are just expecting the expected?</td>
         </tr>
         <tr>
-          <td class="cover">Why are "wise man" and a "wise guy" opposites?</td>
+          <td id="mycover">Why are "wise man" and a "wise guy" opposites?</td>
         </tr>
         <tr>
-          <td class="cover"></td>
+          <td id="mycover"></td>
         </tr>
       </table>
 
