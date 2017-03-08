@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--Kaysen Hansen's Web Page-->
+<html>
+
+  <head>
+    <title> This Is Not A Website </title>
+  </head>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4c91ff;
+    transform:skewX(8deg);
+      }
+li a:not(.active) {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 70px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    position: relative
+}
+li a:hover:not(.active) {
+    background: rgba(195, 203, 216, 0.8);
+    text-decoration: underline;
+}
+li a.active:hover{
+    background: rgba(12, 52, 114, 0.3);
+    text-decoration: underline;
+}
+.active {
+      display: block;
+      background-color: #0c3472;
+      text-decoration: underline;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 70px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 20px;
+      position: relative
+}
+#nav {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  position:fixed;
+  top:0;
+}
+#nav ul {
+  display: table-row;
+}
+#nav li {
+  display: table-cell;
+  margin: 0;
+  float: center;
+  width: 25%;
+  overflow: visible;
+}
+h1{
+  font-weight: bold;
+}
+h3{
+  display: inline-block;
+}
+h1, h6{
+  display:inline;
+}
+footer {
+  display: inline-block;
+  background-color: #0c3472;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width : 100%;
+  text-align: center;
+}
+a.foot:visited{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+a.foot:link{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+#right{
+  float : right;
+  margin-right: 10px;
+  transform:
+}
+#left{
+  float : left;
+  margin-left: 10px;
+}
+.mirror{
+  display: inline-block;
+  transform: scaleX(-1);
+  filter: FlipH; /* IE 6-7-8 */
+}
+body{
+  margin:75px 0px 75px 5px;
+
+  background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 8s ease infinite;
+  animation: background-cycle 8s ease infinite;
+}
+  @-webkit-keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  th, tr, td{
+    border: 3px solid blue;
+
+}
+table{
+    width: 100%;
+}
+tr:hover:not(.table-head){
+    background-color: black;
+    color: white;
+}
+
+.cover{
+    background-color: black;
+}
+.uncover{
+    background-color:transparent
+}
+}
+.table-head{
+  background-color: transparent;
+}
+#mycover{
+  background-color: black;
+}
+
+
+
+</style>
+  <nav>
+    <ul id="nav">
+      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</br>Page</a></li>
+      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
+      <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
+      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <h1>Welcome to Our Jokes and Puns</h1><h6>(page)</h6><h1>!</h1></br>
+    <h3> Hover over the line to uncover the answer!
+
+
+      <button onclick="cover()">Cover All Answers</button>
+      <button onclick="uncover()">Uncover All Answers</button>
+
+      <script>
+      function cover() {
+          document.getElementById("mycover").style.backgroundColor = "black"
+      }
+      function uncover() {
+          document.getElementById("mycover").style.backgroundColor = "transparent"
+      }
+      </script>
+
+      <table>
+        <tr>
+          <th class="table-head">Oxymorons for Morons!</th>
+        </tr>
+        <tr>
+          <td id="mycover">Is it good if a vacuum really sucks?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why is the third hand on a watch called the second hand?</td>
+        </tr>
+        <tr>
+          <td id="mycover">If a word is misspelled in the dictionary, where did he find the words?</td>
+        </tr>
+        <tr>
+          <td id="mycover">If Webster wrote the first dictionary, where'd he find the words?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why do we say something is out of whack? What the heck is a whack?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why does "slow down" and "slow up" mean the same thing?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why does "fat chance" and "slim chance" mean the same thing?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why do "tug" boats push their barges?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why do we sing <i> take me out to the ballgame</i> when we are already there?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why are they called "stands" when they are made for sitting?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why is it called "after dark" when it is really "after light"?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Doesn't "expecting the unexpected" make the unexpected expected meaning you are just expecting the expected?</td>
+        </tr>
+        <tr>
+          <td id="mycover">Why are "wise man" and a "wise guy" opposites?</td>
+        </tr>
+        <tr>
+          <td id="mycover"></td>
+        </tr>
+      </table>
+
+<footer>
+<h3 id="left"> Built by: Kaysen Hansen</h3>
+<a class="foot" href="#top">Go to top</a>
+<h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>
+</footer>
+
+</body>
+
+</html>

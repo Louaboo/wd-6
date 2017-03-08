@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--Kaysen Hansen's Web Page-->
+<html>
+
+  <head>
+    <title> This Is Not A Website </title>
+  </head>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4c91ff;
+    transform:skewX(8deg);
+      }
+li a:not(.active) {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 70px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    position: relative
+}
+li a:hover:not(.active) {
+    background: rgba(195, 203, 216, 0.8);
+    text-decoration: underline;
+}
+li a.active:hover{
+    background: rgba(12, 52, 114, 0.3);
+    text-decoration: underline;
+}
+.active {
+      display: block;
+      background-color: #0c3472;
+      text-decoration: underline;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 70px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 20px;
+      position: relative
+}
+#nav {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  position:fixed;
+  top:0;
+}
+#nav ul {
+  display: table-row;
+}
+#nav li {
+  display: table-cell;
+  margin: 0;
+  float: center;
+  width: 25%;
+  overflow: visible;
+}
+h1{
+  font-weight: bold;
+}
+h3{
+  display: inline-block;
+}
+h1, h6{
+  display:inline;
+}
+footer {
+  display: inline-block;
+  background-color: #0c3472;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width : 100%;
+  text-align: center;
+}
+a.foot:visited{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+a.foot:link{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+#right{
+  float : right;
+  margin-right: 10px;
+  transform:
+}
+#left{
+  float : left;
+  margin-left: 10px;
+}
+.mirror{
+  display: inline-block;
+  transform: scaleX(-1);
+  filter: FlipH; /* IE 6-7-8 */
+}
+body{
+  margin:75px 0px 75px 5px;
+
+  background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 8s ease infinite;
+  animation: background-cycle 8s ease infinite;
+}
+  @-webkit-keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @keyframes background-cycle {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  th, tr, td{
+    border: 3px solid blue;
+
+}
+table{
+    width: 100%;
+}
+tr:hover:not(.table-head){
+    background-color: black;
+    color: white;
+}
+.cover{
+    background-color: black;
+}
+.table-head{
+  background-color: transparent;
+}
+
+
+
+</style>
+  <nav>
+    <ul id="nav">
+      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</br>Page</a></li>
+      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
+      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
+      <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <h1>Welcome to Our Jokes and Puns</h1><h6>(page)</h6><h1>!</h1></br>
+    <h3> Hover over the left sides to uncover the answer!
+
+      <table>
+        <tr>
+          <th class="table-head">Joke</th>
+          <th class="table-head">Answer</th>
+        </tr>
+        <tr>
+          <td>There's only 10 types of people.</td>
+          <td class="cover">Those who understand binary and those who don't.</td>
+        </tr>
+        <tr>
+          <td>What does the military use acid for?</td>
+          <td class="cover">To neutralize the enemy base.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="cover"></td>
+        </tr>
+        <tr>
+          <td>If your arteries clog on a golf course,</td>
+          <td class="cover">do you have a stroke?</td>
+        </tr>
+        <tr>
+          <td>Am I perfect?</br>Am I striving to be better every day?</td>
+          <td class="cover">No</br>Also No.</td>
+        </tr>
+        <tr>
+          <th class="table-head">Pun</th>
+          <th class="table-head">Answer</th>
+        </tr>
+        <tr>
+          <td>I forgot how to throw a boomerang...</td>
+          <td class="cover">but it came back to me</td>
+        </tr>
+        <tr>
+          <td>I had a joke about construction...</td>
+          <td class="cover">but I'm still working on it</td>
+        </tr>
+        <tr>
+          <td>A magician was walking down the street...</td>
+          <td class="cover">then he turned into a grocery store.</td>
+        </tr>
+        <tr>
+          <td>I'm reading a book about Gravity...</td>
+          <td class="cover">it's impossible to put down.</td>
+        </tr>
+        <tr>
+          <td>There's a new type of broom...</td>
+          <td class="cover">it's sweeping the nation.</td>
+        </tr>
+        <tr>
+          <td>Velcro...</td>
+          <td class="cover">what a rip off.</td>
+        </tr>
+        <tr>
+          <td>The rotation of the earth...</td>
+          <td class="cover">really make my day.</td>
+        </tr>
+        <tr>
+          <td>To the guy who invented zero...</td>
+          <td class="cover">thanks for nothing.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="cover"></td>
+        </tr>
+      </table>
+
+<footer>
+<h3 id="left"> Built by: Kaysen Hansen</h3>
+<a class="foot" href="#top">Go to top</a>
+<h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>
+</footer>
+
+</body>
+
+</html>

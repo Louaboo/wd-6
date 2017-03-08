@@ -1,6 +1,0 @@
-<html>
-  <body>
-    <p> this is another page, and this is how you make words</p>
-    </body>
-    </html>
-    
