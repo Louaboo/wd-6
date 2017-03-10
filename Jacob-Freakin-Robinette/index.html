@@ -6,102 +6,6 @@
    <!--<link rel="stylesheet" href="/lib/w3.css">-->
    <title> Jacobs Photography</title>
         <link rel="stylesheet" type="text/css" href="indexstylesheet.css">
-        <style>
-          ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333;
-          }
-
-          li {
-              float: left;
-          }
-
-          li a, .dropbtn {
-              display: inline-block;
-              color: white;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-          }
-
-          li a:hover, .dropdown:hover .dropbtn {
-              background-color: grey;
-          }
-
-          li.dropdown {
-              display: inline-block;
-          }
-          .dropdown-content {
-              display: none;
-              position: absolute;
-              background-color: #f9f9f9;
-              min-width: 160px;
-              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              z-index: 1;
-          }
-          .dropdown-content a {
-              color: black;
-              padding: 12px 16px;
-              text-decoration: none;
-              display: block;
-              text-align: left;
-          }
-
-          .dropdown-content a:hover {background-color: #f1f1f1}
-
-          .dropdown:hover .dropdown-content {
-              display: block;
-          }
-          .w3-center{
-            text-align:center!important;
-          }
-          .w3-content{
-
-          }
-          .w3-display-left {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%,-50%);}
-
-    .w3-button {
-  color: white;
-  background-color: #f1f1f1;
-  padding: 8px 16px;
-}
-.w3-btn, .w3-btn-block, .w3-button {
-    border: none;
-    display: inline-block;
-    outline: 0;
-    padding: 6px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none!important;
-    color:black;
-    background-color: white;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.w3-display-right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(0%,-50%);
-}
-.w3-content {
-    max-width: 980px;
-    margin: auto;
-}
-
-.w3-tooltip, .w3-display-container {
-    position: fixed;
-}
-          </style>
    </head>
     <body>
       <ul>
@@ -112,7 +16,7 @@
           <div class="dropdown-content">
             <a href="Urban.html">Urban</a>
             <a href="Nature.html">Nature</a>
-            <a href="#">Link 3</a>
+            <a href="#">Just for fun</a>
           </div>
         </li>
       </ul>
@@ -120,34 +24,65 @@
       <h2 class="w3-left">Some of My Work</h2>
 
 
-      <div class="w3-content w3-display-container">
+  <div class="w3-container">
 
-        <img class="mySlides" src="images/tree.jpg" style="width:100%">
-        <img class="mySlides" src="images/darklight.jpg" style="width:100%">
-        <img class="mySlides" src="images/rockyoulikeahurricane.jpg" style="width:100%">
-        <img class="mySlides" src="images/flare.jpg" style="width:100%">
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">Previous</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(1)">Next</button>
-      </div>
-      <script>
-            var slideIndex= 1;
-            showDivs(slideIndex);
+  </div>
 
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <img class="mySlides" src="images/americanflag.jpg" style="width:100%">
+    <img class="mySlides" src="images/gray-grey.jpg" style="width:100%">
+    <img class="mySlides" src="images/jamessunset.jpg" style="width:100%">
+    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:95%">
+      <div class=" w3-badge w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <div class="w3-badge w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    </div>
+  </div>
 
-            function showDivs(n) {
-                var i;
-                var x =
-                document.getElementsByClassName("mySlides");
-                if (n > x.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = x.length} ;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideIndex-1].style.display = "";
-            }
-      </script>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-white";
+  }
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+  </script>
+
     </body>
     </html>
