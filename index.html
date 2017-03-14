@@ -4,6 +4,16 @@
   <head>
     <title>Web Page Design 6th Period</title>
     <link href="zSimonsen/main.css" rel="stylesheet">
+    <script>
+      function show(){
+      document.getElementById("droids").style.display="block";
+      setTimeout("hide()", 5000);
+      }
+      function hide(){
+        document.getElementById("droids").style.display="none";
+      }
+      window.onload = hide();
+    </script>
   </head>
   <body>
   <ul>
@@ -42,7 +52,20 @@
       add imperial music background
       onload play what is thy bidding-->
       <center>
-        <button>Droids?</button>
+        <button onclick="show()">Droids?</button>
+        <div id="droids">
+          <img src="zSimonsen/droids.png">
+        </div>
       </center>
+      <script>
+        function show(){
+        document.getElementById("droids").style.display="block";
+        setTimeout("hide()", 5000);
+        }
+        function hide(){
+          document.getElementById("droids").style.display="none";
+        }
+        window.onload = hide();
+      </script>
   </body>
 </html>
