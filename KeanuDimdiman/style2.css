@@ -1,0 +1,35 @@
+
+div.container {
+	align-items: top;
+	align-self: center;
+	display: flex;;
+	border-radius: 100%;
+	flex-direction: column;
+	min-height: 1000px;
+	justify-content: center;
+	width: 1000px;
+  background-repeat: no-repeat;
+}
+body{
+  background-size: 25% 25%
+}
+h1{
+ background-color: blue;
+ color: white;
+ height: 50px;
+ width: 150px;
+}
+h2{
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 205px;
+}
+.button{
+background-color: pink;
+border: none;
+cursor: crosshair;
+height:5px;
+width:2px;
+padding: 20px, 15px, 10px, 5px;
+}

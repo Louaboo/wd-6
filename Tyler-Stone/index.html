@@ -3,17 +3,84 @@
   <head>
     <title>TylerChrome</title>
  <style>
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: red;
+ }
+
+ li {
+     float: left;
+ }
+
+ li a, .dropbtn {
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+
+ li a:hover, .dropdown:hover .dropbtn {
+     background-color: black;
+ }
+
+ li.dropdown {
+     display: inline-block;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+ }
+
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+ }
+
+ .dropdown-content a:hover {background-color: #f1f1f1}
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
  body {
-        background-image: url("dj.jpg");
-        color: teal;
-        font-size: 75px;
+        background-image: url("black-020.png");
+        color: red;
         text-align: center;
+        div.outer { position: relative; height: 24px; }
+ div.outer img { position: absolute; right: 0; bottom: 0; }
 }
 
 </style>
 </head>
 <body>
-<h5>Yo, wassup T Gang, it's yo boy, T-Diggy commin atcha with a Bu-Bu-Bu-Brand new MIXTAPE, "THE DIGSTER" get it now on itunes, or anywhere that has music on it!</h5>
-<img src="TheDigster.png" alt="image" style="width:768px;height:768px;">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="AboutMe.html">About Me</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Other Mixtapes</a>
+      <div class="dropdown-content">
+        <a href="Mixtape.html">THE DIGSTER</a>
+        <a href="Fire.html">LITSKIES</a>
+        <a href="page2.html">IGNITE</a>
+      </div>
+    </li>
+  </ul>
+<font size="9">Yo, wassup T Gang, it's yo boy, T-Diggy commin atcha with a Bu-Bu-Bu-Brand new MIXTAPE, "THE DIGSTER" get it now on itunes, or anywhere that has music!</font>
+<img src="TheDigster1.png" alt="image" style="width:768px;height:768px;">
+<div class="outer">
+    <img src="mgm.png" alt="image" style="width:400px;height:270px;">
+ </div>
+ <iframe width="0%" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/294026374%3Fsecret_token%3Ds-z9Zld&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 </body>
 </html>

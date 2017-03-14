@@ -5,132 +5,146 @@
   <head>
     <title> This Is Not A Website </title>
   </head>
-<style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4c91ff;
-    transform:skewX(8deg);
-      }
-li a:not(.active) {
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 10px 70px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 20px;
-    position: relative
-}
-li a:hover:not(.active) {
-    background: rgba(195, 203, 216, 0.8);
-    text-decoration: underline;
-}
-li a.active:hover{
-    background: rgba(12, 52, 114, 0.3);
-    text-decoration: underline;
-}
-.active {
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #4c91ff;
+      transform:skewX(8deg);
+        }
+  li a:not(.active) {
       display: block;
-      background-color: #0c3472;
-      text-decoration: underline;
-      color: #f2f2f2;
+      color: #000000;
       text-align: center;
       padding: 10px 70px;
       text-decoration: none;
       transition: 0.3s;
       font-size: 20px;
       position: relative
-}
-#nav {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  border: none;
-  position:fixed;
-  top:0;
-}
-#nav ul {
-  display: table-row;
-}
-#nav li {
-  display: table-cell;
-  margin: 0;
-  float: center;
-  width: 25%;
-  overflow: visible;
-}
-h1{
-  font-weight: bold;
-}
-h3{
-  display: inline-block;
-}
-h1, h6{
-  display:inline;
-}
-footer {
-  display: inline-block;
-  background-color: #0c3472;
-  color: #FFFFFF;
-  position: fixed;
-  bottom: 0;
-  width : 100%;
-  text-align: center;
-}
-a.foot:visited{
-  color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-}
-a.foot:link{
-  color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-}
-#right{
-  float : right;
-  margin-right: 10px;
-  transform:
-}
-#left{
-  float : left;
-  margin-left: 10px;
-}
-.mirror{
-  display: inline-block;
-  transform: scaleX(-1);
-  filter: FlipH; /* IE 6-7-8 */
-}
-body{
-  margin:50px 0px 75px 0px;
-
-  background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
-  background-size: 10000% 10000%;
-
-  -webkit-animation: background-cycle 8s ease infinite;
-  animation: background-cycle 8s ease infinite;
-}
-  @-webkit-keyframes background-cycle {
-      0%{background-position:0% 96%}
-      50%{background-position:100% 5%}
-      100%{background-position:0% 96%}
   }
-  @keyframes background-cycle {
-      0%{background-position:0% 96%}
-      50%{background-position:100% 5%}
-      100%{background-position:0% 96%}
+  li a:hover:not(.active) {
+      background: rgba(195, 203, 216, 0.8);
+      text-decoration: underline;
   }
+  li a.active:hover{
+      background: rgba(12, 52, 114, 0.3);
+      text-decoration: underline;
+  }
+  .active {
+        display: block;
+        background-color: #0c3472;
+        text-decoration: underline;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 70px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 20px;
+        position: relative
+  }
+  #nav {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    position:fixed;
+    top:0;
+  }
+  #nav ul {
+    display: table-row;
+  }
+  #nav li {
+    display: table-cell;
+    margin: 0;
+    float: center;
+    width: 25%;
+    overflow: visible;
+  }
+  h1{
+    font-weight: bold;
+  }
+  h3{
+    display: inline-block;
+  }
+  h1, h6{
+    display:inline;
+  }
+  footer {
+    display: inline-block;
+    background-color: #0c3472;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width : 100%;
+    text-align: center;
+  }
+  a.foot:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+  }
+  a.foot:link{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+  }
+  #right{
+    float : right;
+    margin-right: 10px;
+    transform:
+  }
+  #left{
+    float : left;
+    margin-left: 10px;
+  }
+  .mirror{
+    display: inline-block;
+    transform: scaleX(-1);
+    filter: FlipH; /* IE 6-7-8 */
+  }
+  body{
+    margin:75px 0px 75px 5px;
 
-</style>
+    background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
+    background-size: 10000% 10000%;
+
+    -webkit-animation: background-cycle 8s ease infinite;
+    animation: background-cycle 8s ease infinite;
+  }
+    @-webkit-keyframes background-cycle {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+    @keyframes background-cycle {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+    th, tr, td{
+      border: 3px solid blue;
+
+    }
+    table{
+      width: 100%;
+    }
+    tr:hover{
+      background-color: black;
+      color: white;
+    }
+    .color-div{
+      background-color: black;
+    }
+
+  </style>
   <nav>
   <ul id="nav">
-    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">Pineapples</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\aboutus.html">About us</a></li>
+    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home Page</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
+    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
   </ul>
 
   </nav>
@@ -140,25 +154,16 @@ body{
     <h1>Welcome to Our Home</h1>
     <h6>(page)</h6>
     <h1>!</h1></br>
-        <img src= "https://ak0.scstatic.net/1/cdn2-cont6.sweetcouch.com/143557262762854435-wipe-shoe-doormat.jpg"> </br>
-      <!--</br><b>Favorite Color</b>
-        <input id="color" type="text" list="colors" />
-          <datalist id="colors">
-            <option value="Red">
-            <option value="Orange">
-            <option value="Yellow">
-            <option value="Green">
-            <option value="Blue">
-            <option value="Indigo">
-            <option value="Violet">
-            <option value="White">
-            <option value="Black">
-            <option value="Gold">
-            <option value="Silver">
-            <option value="Other">
-          </datalist></br>!-->
-          
-<footer>
+        <img src= "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\wipeyourshoes.jpg" height = "400px" width="525px"> </br>
+    <h2>If you DON'T enjoy, bad puns, stupid jokes, and other useless jokes, DO NOT continue from this page!</br></br>Here's a few memes to start off with:</br></h2>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\couples.jpg" height = "450px" width = "314px"> </br>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\necks.jpg" height = "360px" width = "360px"> </br>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\mythyou.jpg" height = "480px" width = "242px"> </br>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\dadsavage.jpg" height = "px" width = "px"> </br>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\applemaps.jpg" height = "px" width = "px"> </br>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jedis.jpg" height = "px" width = "px"> </br>
+<img src = "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\woman.jpg" height = "px" width = "px"> </br>
+</br><footer>
 <h3 id="left"> Built by: Kaysen Hansen</h3>
 <a class="foot" href="#top">Go to top</a>
 <h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>

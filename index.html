@@ -4,37 +4,68 @@
   <head>
     <title>Web Page Design 6th Period</title>
     <link href="zSimonsen/main.css" rel="stylesheet">
+    <script>
+      function show(){
+      document.getElementById("droids").style.display="block";
+      setTimeout("hide()", 5000);
+      }
+      function hide(){
+        document.getElementById("droids").style.display="none";
+      }
+      window.onload = hide();
+    </script>
   </head>
   <body>
   <ul>
     <li><a class ="active">Home</a></li>
     <li class="dropdown"><a>Student Work</a>
       <div class="dropdown-content">
-        <a href="GrantArave/index.html" target="_blank">Grant Arave</a>
-        <a href="Aldan_Bailey/index.html" target="_blank">Aldan Bailey</a>
-        <a href="AndrewBarton/index.html" target="_blank">Andrew Barton</a>
-        <a href="Hailey_Church/index.html" target="_blank">Hailey Church</a>
-        <a href="SpencerCrawford/index.html" target="_blank">Spencer Crawford</a>
-        <a href="cally_dessenberger/index.html" target="_blank">Cally Dessenberger</a>
-        <a href="KeanuDimdiman/index.html" target="_blank">Keanu Dimdiman</a>
-        <a href="Dylan_Eastes/index.html" target="_blank">Dylan Eastes</a>
-        <a href="Sydney_Eastman/index.html" target="_blank">Sydney Eastman</a>
-        <a href="Amanda_Flores/index.html" target="_blank">Amanda Flores</a>
-        <a href="masongreenamyer/index.html" target="_blank">Mason Greenamyer</a>
-        <a href="KaysenHansen/index.html" target="_blank">Kaysen Hansen</a>
-        <a href="Dillan_Hart/index.html" target="_blank">Dillan Hart</a>
-        <a href="Hyer/index.html" target="_blank">Andrew Hyer</a>
-        <a href="jesuslovato/index.html" target="_blank">Jesus Lovato</a>
-        <a href="Cayden_Miller/index.html" target="_blank">Cayden Miller</a>
-        <a href="Merrick_Miya/index.html" target="_blank">Merrick Miya</a>
-        <a href="Jacob-Freakin-Robinette/index.html" target="_blank">Jacob Robinette</a>
-        <a href="Tyler-Stone/index.html" target="_blank">Tyler Stone</a>
-        <a href="LandonTracy/index.html" target="_blank">Landon Tracy</a>
+        <a href="GrantArave/" target="_blank">Grant Arave</a>
+        <a href="Aldan_Bailey/" target="_blank">Aldan Bailey</a>
+        <a href="AndrewBarton/" target="_blank">Andrew Barton</a>
+        <a href="Hailey_Church/" target="_blank">Hailey Church</a>
+        <a href="SpencerCrawford/" target="_blank">Spencer Crawford</a>
+        <a href="cally_dessenberger/" target="_blank">Cally Dessenberger</a>
+        <a href="KeanuDimdiman/" target="_blank">Keanu Dimdiman</a>
+        <a href="Dylan_Eastes/" target="_blank">Dylan Eastes</a>
+        <a href="Sydney_Eastman/" target="_blank">Sydney Eastman</a>
+        <a href="Amanda_Flores/" target="_blank">Amanda Flores</a>
+        <a href="masongreenamyer/" target="_blank">Mason Greenamyer</a>
+        <a href="KaysenHansen/" target="_blank">Kaysen Hansen</a>
+        <a href="Dillan_Hart/" target="_blank">Dillan Hart</a>
+        <a href="Hyer/" target="_blank">Andrew Hyer</a>
+        <a href="jesuslovato/" target="_blank">Jesus Lovato</a>
+        <a href="Cayden_Miller/" target="_blank">Cayden Miller</a>
+        <a href="Merrick_Miya/" target="_blank">Merrick Miya</a>
+        <a href="Jacob-Freakin-Robinette/" target="_blank">Jacob Robinette</a>
+        <a href="Tyler-Stone/" target="_blank">Tyler Stone</a>
+        <a href="LandonTracy/" target="_blank">Landon Tracy</a>
       </div>
     </li>
   </ul>
     <h1>Welcome to Mr. Simonsen's Web Page Design Class</h1>
     <p>This main site will act as an example site as well
       as a way to link to all student work.</p>
+      <br>
+      <br>
+      <!--add button that shows droids and plays droids sound
+      add imperial music background
+      onload play what is thy bidding-->
+      <center>
+        <button onclick="show()">Droids?</button>
+        <div id="droids">
+          <img src="zSimonsen/droids.png">
+        </div>
+      </center>
+      <script>
+        function show(){
+        document.getElementById("droids").style.display="block";
+        setTimeout("hide()", 5000);
+        }
+        function hide(){
+          document.getElementById("droids").style.display="none";
+        }
+        window.onload = hide();
+      </script>
   </body>
 </html>
