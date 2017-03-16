@@ -5,7 +5,7 @@
     <title>Web Page Design 6th Period</title>
     <link href="zSimonsen/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
   <ul>
     <li><a class ="active">Home</a></li>
     <li class="dropdown"><a>Student Work</a>
@@ -42,7 +42,7 @@
       add imperial music background
       onload play what is thy bidding-->
       <center>
-        <button onclick="show()">Droids?</button>
+        <button type="button" onclick="show()">Droids?</button>
         <div id="droids">
           <img src="zSimonsen/droids.png">
         </div>
@@ -51,10 +51,12 @@
         function show(){
         document.getElementById("droids").style.display="block";
         document.getElementById("audio").play();
+        document.getElementById("body").style.cursor="wait";
         setTimeout("hide()", 1500);
         }
         function hide(){
           document.getElementById("droids").style.display="none";
+          document.getElementById("body").style.cursor="auto";
         }
         window.onload = hide();
       </script>
