@@ -47,11 +47,14 @@ li a:hover:not(.active) {
     color: white;
   }
    h1 {
-      background-color: #8FBC8F;
       width: 600px;
       margin: auto;
       text-align: center;
-        text-shadow: 2px 2px 5px 	#FF00FF;
+      text-shadow: 2px 2px 5px 	#FF00FF;
+    }
+    #grad1 {
+      height: 75px;
+      background:linear-gradient(bottom left, #33ccff 0%, #ff99cc 100%);
     }
     p {
       background-color: #8FBC8F;
@@ -59,12 +62,33 @@ li a:hover:not(.active) {
       text-transform: inherit;
       letter-spacing: 4px;
     }
+    #id{
+      width:100px;
+      height:100px;
+      position: relative;
+      background-color: silver;
+      animation-name: example;
+      animation-duration: 15s
+    }
+    @keyframes example {
+        0%   {background-color: blue; left:0px; top:0px;}
+        15%  {background-color: }
+        25%  {background-color: gold; left:0px; top:700px;}
+        50%  {background-color: silver; left:200px; top:200px;}
+        75%  {background-color: green; left:0px; top:200px;}
+        100% {background-color: lime; left:0px; top:1000px;}
+
   </style>
 
   <body>
 <h1>Welcome to Amanda's World</h1>
+<div id="grad1">Welcome</div>
   <ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href= "firstpage.html">First</a></li>
+    <li><a href="secondpage.html">Second</a></li>
+  </ul>
+<div id="id"></div>
+
 </body>
 </html>
