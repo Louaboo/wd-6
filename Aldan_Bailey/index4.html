@@ -84,15 +84,50 @@ border-bottom-right-radius:75px;
 
 -webkit-box-shadow: 66px 49px 45px #177a66;
 
-box-shadow: 66px 49px 45px #177a66;}
+box-shadow: 66px 49px 45px #daa520;}
 
+.title {
+-webkit-animation: cssAnimation 3.797s infinite ease;
+-moz-animation: cssAnimation 3.797s 20 infinite;
+-o-animation: cssAnimation 3.797s 20 infinite;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
+}
+
+.title2{
+-webkit-animation: cssAnimation 29s infinite ease-out;
+-moz-animation: cssAnimation 29s infinite ease-out;
+-o-animation: cssAnimation 29s infinite ease-out;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(8deg) scale(1) skew(53deg) translate(300px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(8deg) scale(1) skew(53deg) translate(300px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(8deg) scale(1) skew(53deg) translate(300px); }
+}
 </style>
 
 </head>
 
 <body>
 
-<div><font color="#B8860B" size="20"><h2><pre> A L D A N S  L I F E</PRE><h2></font></div>
+<div class="title"><font color="#B8860B" size="20"><h2><pre> A L D A N S  L I F E</PRE></h2></font></div>
 
 <h3 align="left" class="cursive"; align="right"><div class="jaboi"><font
 
@@ -102,7 +137,7 @@ color="#39CCCC" size="20">Things I love</font></h3></div>
 
 <font color="#CD853F">
 
-<div class="animation">
+<div class="title2">
 
 <strong><li><h6><a href="index.html"><pre>Dirt Biking</pre></a><h6></li>
 
@@ -124,10 +159,8 @@ color="#39CCCC" size="20">Things I love</font></h3></div>
 
 </h1>
 
-</div class="animation">
-
 </ul></font>
-
+</div>
 <br>
 
 <br>
