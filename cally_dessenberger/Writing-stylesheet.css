@@ -1,0 +1,7 @@
+#Stories{
+  max-width: 500px;
+  max-height: 400px;
+  overflow: scroll;
+  word-wrap: normal;
+  text-indent: 50px;
+}
