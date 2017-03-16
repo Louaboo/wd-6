@@ -27,14 +27,18 @@ p.eagle {
   padding: 25px 0px 0px 0px;
 }
 div:hover {
-animation: sidewinder 3s linear 1 alternate;
+ -webkit-animation: sidewinder 3s linear 1 alternate;
 }
-@keyframes sidewinder {
+@-webkit-keyframes sidewinder {
   0% {width: 300px; height: 150px}
   25% {width: 300px; height: 150px}
   50% {width: 300px; height: 150px}
   75% {width: 300px; height: 150px}
   100% {width: 300px; height: 150px}
+}
+img.hauler {
+  padding: 25px 0px 0px 0px;
+  float: left;
 }
 h3 {
   color: #ffffff;
