@@ -16,55 +16,64 @@ body {font-family: "Lato", sans-serif;
     background-size:35%;}
 html{background: url("Pictures/windows_xp.jpg") no-repeat center center fixed;
       background-size: cover;}
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}}
-div {width: 200px;
-    height: 100px;
-    background-color: teal;
-    font-weight: bold;
-      font-family: "Comic Sans MS", cursive, sans-serif;
-    position: relative;
-    -webkit-animation: mymove 8s infinite;
-    animation: mymove 8s infinite;}
-#div1 {-webkit-animation-timing-function: linear;}
-#div2 {-webkit-animation-timing-function: ease;}
-#div3 {-webkit-animation-timing-function: ease-in;}
-#div4 {-webkit-animation-timing-function: ease-out;}
-#div5 {-webkit-animation-timing-function: ease-in-out;}
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-@-webkit-keyframes mymove {from {left: 0px;}
-    to {left: 746x;}}
-@keyframes mymove {from {left: 0px;}
-    to {left: 746px;}}
-  a {text-align: center;
+  h1 {text-align: center;
     font-size: 70px;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-variant: small-caps;
+    text-align: center;
     background-color: #70b4d1;}
   h3 {text-align: center;}
-
+  ul {list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;}
+  li {float: left;}
+  li a, .dropbtn {display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;}
+  li a:hover, .dropdown:hover .dropbtn {background-color: red;}
+  li.dropdown {display: inline-block;}
+  .dropdown-content {display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;}
+  .dropdown-content a {color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;}
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {display: block;}
 </style>
 <body>
+
+
   <audio controls autoplay>
-    <source src="pictures/windows_music.mp3" type="audio/mpeg">
+    <source src="Pictures/windows_music.mp3" type="audio/mpeg">
   </audio>
 
-<a href="http://bfy.tw/AT7M" target="_blank">Dr. Caboose</a>
-<h3>What's better than 1 Mozzerella Stick? 37 Mozzerella Sticks!</h3>
- <img src="pictures/Table.JPG" alt="Table pun" width="50%" height="50%">
- <img src="pictures/Fire.JPG" alt="Hotspot pun" width="50%" height="50%">
+  <ul>
+    <li><a href="#YAAAAS">Here</a></li>
+    <li><a href="#Nein">There</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Everywhere</a>
+      <div class="dropdown-content">
+        <a href="#">Canada</a>
+        <a href="#">Meryland</a>
+        <a href="#">Whats the point of asking questions?</a>
+      </div>
+    </li>
+  </ul>
 
-<div id="div1">It's a beautiful day outside</div>
-<div id="div2">Birds are singing</div>
-<div id="div3">Flowers are blooming</div>
-<div id="div4">On days like this, people like you</div>
-<div id="div5">Should get off the computer and play outside</div>
+<h1 href="http://bfy.tw/AT7M" target="_blank">Dr. Caboose</a>
+<h3>What's better than 1 Mozzerella Stick? 37 Mozzerella Sticks!</h3>
+ <img src="Pictures/Table.JPG" alt="Table pun" width="50%" height="50%">
+ <img src="Pictures/Fire.jpg" alt="Hotspot pun" width="50%" height="50%">
 
 <table>
   <tr>
@@ -79,7 +88,8 @@ div {width: 200px;
     <td>Cheese Sticks</td>
     <td>Stick Cheese</td>
 
-
+<a href="Page_1.html" target="_blank">Old</a>
+<a href="Page_2.html" target="_blank">Old</a>
 </body>
 </html>
 
