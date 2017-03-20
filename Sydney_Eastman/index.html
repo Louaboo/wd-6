@@ -70,6 +70,21 @@
       color: pink;
       letter-spacing: 3px;
     }
+    #id{
+      padding-bottom: 50px;
+      width:200px;
+      height:200px;
+      position: relative;
+      background-color: hotpink;
+      animation-name: example;
+      animation-duration: 30s;
+    }
+    @keyframes example {
+        0%   {background-color: hotpink; left:0px; top:0px;}
+        25%  {background-color: purple; left:0px; top:200px;}
+        50%  {background-color: hotpink; left:200px; top:200px;}
+        75%  {background-color: purple; left:200px; top:0px;}
+        100% {background-color: hotpink; left:0px; top:0px;}
    </style>
  </head>
  <body>
@@ -87,6 +102,7 @@
      </li>
    </ul>
    <h1>WELCOME! - My Name is Sydney Eastman.</h1>
+    <div id="id"></div>
    <p> I am really into any type of music.</p>
 </body>
 </html>
