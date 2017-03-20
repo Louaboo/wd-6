@@ -32,3 +32,10 @@
 .dropdown:hover .dropbtn {
     background-color: #ED330B;
 }
+body {
+    background-image: url("The giant.png");
+    background-repeat: no-repeat;
+    background-position: center;;
+    background-attachment: fixed;
+    background-size: cover;
+}
