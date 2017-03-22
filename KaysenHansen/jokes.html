@@ -128,23 +128,23 @@ body{
 
   }
   table{
-    width: 100%;
+    width: auto;
   }
   tr:hover{
     background-color: black;
     color: white;
   }
-  #mycover{
+  .color-div{
     background-color: black;
   }
 
 </style>
   <nav>
     <ul id="nav">
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home Page</a></li>
-      <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a class="active" href="jokes.html">Jokes and Puns</a></li>
+      <li><a href="oxymorons.html">Oxymorons for Morons</a></li>
+      <li><a href="engineersconversions.html">Engineers Conversions</a></li>
     </ul>
   </nav>
 
@@ -152,19 +152,29 @@ body{
     <h1>Welcome to Our Jokes and Puns</h1><h6>(page)</h6><h1>!</h1></br>
     <h3> Hover over the right side to uncover the answer!</h3><h2>
 
-
             <!--<button onclick="cover()">Cover All Answers</button>
             <button onclick="uncover()">Uncover All Answers</button>
 
             <script>
             function cover() {
-                document.getElementById("mycover").style.backgroundColor = "black"
+                document.getElementbyClassName("mycover").style.backgroundColor = "black"
             }
             function uncover() {
-                document.getElementById("mycover").style.backgroundColor = "transparent"
+                document.getElementByClassName("mycover").style.backgroundColor = "transparent"
             }
           </script>!-->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<button type="button" id="uncover-color">Uncover All Answers</button>
+
+    <script type="text/javascript">
+$('body').on('click', '#uncover-color', function(){
+$('.color-div').each(function(){
+$(this).css('background-color', $(this).data('color'));
+})
+})
+    </script>
       <table>
         <tr>
           <th>Joke</th>
@@ -172,19 +182,19 @@ body{
         </tr>
         <tr>
           <td>There's only 10 types of people.</td>
-          <td id="mycover">Those who understand binary and those who don't.</td>
+          <td class="color-div" data-color="transparent">Those who understand binary and those who don't.</td>
         </tr>
         <tr>
           <td>What does the military use acid for?</td>
-          <td id="mycover">To neutralize the enemy base.</td>
+          <td class="color-div" data-color="transparent">To neutralize the enemy base.</td>
         </tr>
         <tr>
           <td>If your arteries clog on a golf course,</td>
-          <td id="mycover">do you have a stroke?</td>
+          <td class="color-div" data-color="transparent">do you have a stroke?</td>
         </tr>
         <tr>
           <td>Am I perfect?</br>Am I striving to be better every day?</td>
-          <td id="mycover">No</br>Also No.</td>
+          <td class="color-div" data-color="transparent">No</br>Also No.</td>
         </tr>
         <tr>
           <th>Pun</th>
@@ -192,51 +202,54 @@ body{
         </tr>
         <tr>
           <td>I forgot how to throw a boomerang...</td>
-          <td id="mycover">but it came back to me</td>
+          <td class="color-div" data-color="transparent">but it came back to me</td>
         </tr>
         <tr>
           <td>I had a joke about construction...</td>
-          <td id="mycover">but I'm still working on it</td>
+          <td class="color-div" data-color="transparent">but I'm still working on it</td>
         </tr>
         <tr>
           <td>A magician was walking down the street...</td>
-          <td id="mycover">then he turned into a grocery store.</td>
+          <td class="color-div" data-color="transparent">then he turned into a grocery store.</td>
         </tr>
         <tr>
           <td>I'm reading a book about Gravity...</td>
-          <td id="mycover">it's impossible to put down.</td>
+          <td class="color-div" data-color="transparent">it's impossible to put down.</td>
         </tr>
         <tr>
           <td>There's a new type of broom...</td>
-          <td id="mycover">it's sweeping the nation.</td>
+          <td class="color-div" data-color="transparent">it's sweeping the nation.</td>
         </tr>
         <tr>
           <td>Velcro...</td>
-          <td id="mycover">what a rip off.</td>
+          <td class="color-div" data-color="transparent">what a rip off.</td>
         </tr>
         <tr>
           <td>The rotation of the earth...</td>
-          <td id="mycover">really make my day.</td>
+          <td class="color-div" data-color="transparent">really makes my day.</td>
         </tr>
         <tr>
           <td>To the guy who invented zero...</td>
-          <td id="mycover">thanks for nothing.</td>
+          <td class="color-div" data-color="transparent">thanks for nothing.</td>
         </tr>
         <tr>
           <td>I used to have a fear of hurdles...</td>
-          <td id="mycover"> But I got over it</td>
+          <td class="color-div" data-color="transparent"> But I got over it</td>
         </tr>
         <tr>
           <td>No matter how much you push the envelope...</td>
-          <td id="mycover">It's still stationery</td>
+          <td class="color-div" data-color="transparent">It's still stationery</td>
         </tr>
         <tr>
           <td>I'm thinking about starting a band called cellophane...</td>
-          <td id="mycover">I'll rap</td>
+          <td class="color-div" data-color="transparent">I'll rap</td>
         </tr>
       </table></h2>
 
-<footer>
+<iframe style: "border" width="600" height="315"  src = "https://www.youtube.com/v/xXdb16-RRwI?loop=1&autoplay=1&start=58&end=66&controls=0&version=3" type = "video/webm">
+</iframe>
+
+</br><footer>
 <h3 id="left"> Built by: Kaysen Hansen</h3>
 <a class="foot" href="#top">Go to top</a>
 <h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>

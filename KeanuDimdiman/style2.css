@@ -25,3 +25,11 @@ h2{
   height: 40px;
   width: 205px;
 }
+.button{
+background-color: rgba(100,0,200,0.5);
+border: none;
+cursor: crosshair;
+height:5px;
+width:2px;
+
+}
