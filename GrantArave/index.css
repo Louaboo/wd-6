@@ -84,3 +84,22 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+div.animation {
+  height:100px;
+  position: relative;
+  background-color: red;
+  animation-name: animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: -1;
+}
+
+@keyframes animation {
+  0% {background-color: black; left:0px; top:0px;}
+  25% {background-color: yellow; left:0px; top:850px;}
+  50% {background-color: white; left:0px; top:0px;}
+  75% {background-color: yellow; left:0px; top:850px;}
+  100% {background-color: black; left:0px; top:0px;}
+}

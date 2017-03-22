@@ -1,0 +1,27 @@
+p {
+   font-size: 20px;
+   font-family: 'Exo', sans-serif;
+}
+ul {
+  font-size: 20px;
+  font-family: 'Exo', sans-serif;
+}
+#Diet {
+font-size: 30px;
+font-family: 'Exo', sans-serif;
+}
+#Offspring {
+font-size: 30px;
+font-family: 'Exo', sans-serif;
+}
+#OtherFacts {
+  font-size: 30px;
+  font-family: 'Exo', sans-serif;
+}
+h1 {
+  font-family: 'Exo', sans-serif;
+}
+html {
+background: linear-gradient(#fff0e6, #b34700, #331400, #fff0e6, #b34700, #331400, #b34700, #fff0e6, #ff751a, #331400, #fff0e6)
+
+}
