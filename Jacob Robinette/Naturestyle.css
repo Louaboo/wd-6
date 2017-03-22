@@ -1,12 +1,17 @@
-body{
-  background-image: url("images/tree.JPG");
-}
-h2{
-  color:white
-}
+h1 {
+    color: black;
+  }
+  h2{
+    color:white
+  }
+  body{
+    background-image: url("images/tree.JPG");
+  }
+
+
 .w3-badge {
     height: 13px;
-    width: 13px; 
+    width: 13px;
     padding: 0;
   }
     .w3-transparent
