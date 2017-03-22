@@ -26,10 +26,10 @@ h2{
   width: 205px;
 }
 .button{
-background-color: pink;
+background-color: rgba(100,0,200,0.5);
 border: none;
 cursor: crosshair;
 height:5px;
 width:2px;
-padding: 20px, 15px, 10px, 5px;
+
 }
