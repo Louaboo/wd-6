@@ -7,10 +7,15 @@ body {
   font-family: 'Lobster', cursive;
   overflow: scroll;
 }
+p.footer {
+  color: black;
+  text-align: center;
+  font-size: 250%;
+}
 p {
-  color:white;
+  color:lightblue;
   text-indent: 20px;
-  font-size: 100%;
+  font-size: 125%;
 }
 
 h1 {
