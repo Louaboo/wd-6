@@ -41,7 +41,7 @@
  }
 
  .dropdown-content a {
-     color: black;
+     color: white;
      padding: 12px 16px;
      text-decoration: none;
      display: block;
@@ -75,8 +75,6 @@
   </ul>
 <font size="9">Yo, wassup T Gang, it's yo boy, T-Diggy commin atcha with a Bu-Bu-Bu-Brand new MIXTAPE, "THE DIGSTER" get it now on itunes, or anywhere that has music!</font>
 <iframe width="50" height="50" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282984561&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-<button id = "hide"> Hide </button>
-<button id = "show"> Show</button>
 <img class = "target">
 </img>
 </body>
@@ -91,19 +89,16 @@
 
    $(document).ready(function() {
 
-      $("#hide").click(function(){
-         $(".target").hide( "explode", {pieces: 32 }, 2000 );
-      });
+   })
+   setTimeout(function(){
+$(".target").hide( "explode", {pieces: 16}, 2000 );
+}, 77000);
+   setTimeout(function(){
+$(".target").show( "explode", {pieces: 16}, 2000 );
+}, 85000);
 
-      $("#show").click(function(){
-         $(".target").show( "explode", {pieces: 32}, 2000 );
-      });
 
-   });
-   function explode(){
 
-}
-setTimeout(hide, 75);
 
 </script>
 <style>
