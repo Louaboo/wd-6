@@ -7,6 +7,12 @@ body {
   font-family: 'Lobster', cursive;
   overflow: scroll;
 }
+p.footer {
+  color: white;
+  text-align: center;
+  font-size: 250%;
+  top: 600;
+}
 p {
   color:white;
   text-indent: 20px;

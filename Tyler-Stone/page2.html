@@ -41,7 +41,7 @@
  }
 
  .dropdown-content a {
-     color: black;
+     color: white;
      padding: 12px 16px;
      text-decoration: none;
      display: block;
@@ -73,10 +73,8 @@
       </div>
     </li>
   </ul>
-<font size="9">Yo, wassup T Gang, it's yo boy, T-Diggy commin atcha with a Bu-Bu-Bu-Brand new MIXTAPE, "THE DIGSTER" get it now on itunes, or anywhere that has music!</font>
-<iframe width="50" height="50" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282984561&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-<button id = "hide"> Hide </button>
-<button id = "show"> Show</button>
+<font size="9">Yo guys, this is my album IGNITE, it was my coming to fame album and really means a lot to me. The song in the background was my most popular in the album, and very recognizable.</font>
+<iframe width="0" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/22452111&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 <img class = "target">
 </img>
 </body>
@@ -91,22 +89,19 @@
 
    $(document).ready(function() {
 
-      $("#hide").click(function(){
-         $(".target").hide( "explode", {pieces: 32 }, 2000 );
-      });
+   })
+   setTimeout(function(){
+$(".target").hide( "explode", {pieces: 16}, 2000 );
+}, 39000);
+   setTimeout(function(){
+$(".target").show( "explode", {pieces: 16}, 2000 );
+}, 50000);
 
-      $("#show").click(function(){
-         $(".target").show( "explode", {pieces: 32}, 2000 );
-      });
 
-   });
-   function explode(){
 
-}
-setTimeout(hide, 75);
 
 </script>
 <style>
-  img{width:1044px; height:1044px; background: url("IGNITE.png")}
+  img{width:768px; height:768px; background: url("IGNITE.png")}
   </style>
 </html>
