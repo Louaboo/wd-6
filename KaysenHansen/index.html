@@ -5,132 +5,184 @@
   <head>
     <title> This Is Not A Website </title>
   </head>
-<style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4c91ff;
-    transform:skewX(8deg);
-      }
-li a:not(.active) {
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 10px 70px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 20px;
-    position: relative
-}
-li a:hover:not(.active) {
-    background: rgba(195, 203, 216, 0.8);
-    text-decoration: underline;
-}
-li a.active:hover{
-    background: rgba(12, 52, 114, 0.3);
-    text-decoration: underline;
-}
-.active {
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      transform:skewX(8deg);
+        }
+  li a:not(.active) {
       display: block;
-      background-color: #0c3472;
-      text-decoration: underline;
-      color: #f2f2f2;
+      color: #000000;
       text-align: center;
       padding: 10px 70px;
       text-decoration: none;
       transition: 0.3s;
       font-size: 20px;
-      position: relative
-}
-#nav {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  border: none;
-  position:fixed;
-  top:0;
-}
-#nav ul {
-  display: table-row;
-}
-#nav li {
-  display: table-cell;
-  margin: 0;
-  float: center;
-  width: 25%;
-  overflow: visible;
-}
-h1{
-  font-weight: bold;
-}
-h3{
-  display: inline-block;
-}
-h1, h6{
-  display:inline;
-}
-footer {
-  display: inline-block;
-  background-color: #0c3472;
-  color: #FFFFFF;
-  position: fixed;
-  bottom: 0;
-  width : 100%;
-  text-align: center;
-}
-a.foot:visited{
-  color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-}
-a.foot:link{
-  color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-}
-#right{
-  float : right;
-  margin-right: 10px;
-  transform:
-}
-#left{
-  float : left;
-  margin-left: 10px;
-}
-.mirror{
-  display: inline-block;
-  transform: scaleX(-1);
-  filter: FlipH; /* IE 6-7-8 */
-}
-body{
-  margin:75px 0px 75px 5px;
+      position: relative;
 
-  background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
-  background-size: 10000% 10000%;
+    }
+.one{
+      background: linear-gradient(225deg, #5cd9fa, #4ab4f6, #8dabff, #00a7e0);
+      background-size: 10000% 10000%;
 
-  -webkit-animation: background-cycle 8s ease infinite;
-  animation: background-cycle 8s ease infinite;
-}
-  @-webkit-keyframes background-cycle {
-      0%{background-position:0% 96%}
-      50%{background-position:100% 5%}
-      100%{background-position:0% 96%}
+      -webkit-animation: background-cycle 5s infinite;
+      animation: background-cycle 5s infinite;
+      -moz-animation: background-cycle 5s infinite;
   }
-  @keyframes background-cycle {
-      0%{background-position:0% 96%}
-      50%{background-position:100% 5%}
-      100%{background-position:0% 96%}
-  }
+.two{
+      background: linear-gradient(225deg, #8dabff, #00a7e0, #5cd9fa, #4ab4f6);
+      background-size: 10000% 10000%;
 
-</style>
+      -webkit-animation: background-cycle 5s infinite;
+      animation: background-cycle 5s infinite;
+      -moz-animation: background-cycle 5s infinite;
+  }
+.three{
+      background: linear-gradient(225deg, #00a7e0, #5cd9fa, #4ab4f6, #8dabff);
+      background-size: 10000% 10000%;
+
+      -webkit-animation: background-cycle 5s infinite;
+      animation: background-cycle 5s infinite;
+      -moz-animation: background-cycle 5s infinite;
+  }
+  li a:hover:not(.active) {
+      background: rgba(195, 203, 216, 0.8);
+      text-decoration: underline;
+  }
+  li a.active:hover{
+      background: rgba(12, 52, 114, 0.3);
+      text-decoration: underline;
+  }
+  .active {
+        display: block;
+        text-decoration: underline;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 70px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 20px;
+        position: relative;
+
+        background: linear-gradient(225deg, #1d424b, #1b4057, #2c354f, #003040);
+        background-size: 10000% 10000%;
+
+        -webkit-animation: background-cycle 5s infinite;
+        animation: background-cycle 5s infinite;
+        -moz-animation: background-cycle 5s infinite;
+  }
+  #nav {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    position:fixed;
+    top:0;
+  }
+  #nav ul {
+    display: table-row;
+  }
+  #nav li {
+    display: table-cell;
+    margin: 0;
+    float: center;
+    width: 25%;
+    overflow: visible;
+  }
+  h1{
+    font-weight: bold;
+  }
+  h3{
+    display: inline-block;
+  }
+  h1, h6{
+    display:inline;
+  }
+  footer {
+    display: inline-block;
+    background-color: #0c3472;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width : 100%;
+    text-align: center;
+  }
+  a.foot:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+  }
+  a.foot:link{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+  }
+  #right{
+    float : right;
+    margin-right: 10px;
+    transform:
+  }
+  #left{
+    float : left;
+    margin-left: 10px;
+  }
+  .mirror{
+    display: inline-block;
+    transform: scaleX(-1);
+    filter: FlipH; /* IE 6-7-8 */
+  }
+  body{
+    margin:75px 0px 75px 5px;
+    background-image: url("background1.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+  { background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
+    background-size: 10000% 10000%;
+
+    -webkit-animation: background-cycle 8s ease infinite;
+    animation: background-cycle 8s ease infinite;
+  }
+    @-webkit-keyframes background-cycle {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+    @keyframes background-cycle {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+    @-moz-keyframes background-cycle {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+    th, tr, td{
+      border: 3px solid blue;
+
+    }
+    table{
+      width: 100%;
+    }
+    tr:hover{
+      background-color: #e6ffff;
+      color: black;
+    }
+    .color-div{
+      background-color: black;
+    }
+
+  </style>
   <nav>
   <ul id="nav">
-    <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home Page</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
-    <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
+    <li><a class = "active" href="index.html">Home Page</a></li>
+    <li><a class = "one" href="jokes.html">Jokes and Puns</a></li>
+    <li><a class = "two" href="oxymorons.html">Oxymorons for Morons</a></li>
+    <li><a class = "three" href="engineersconversions.html">Engineers Conversions</a></li>
   </ul>
 
   </nav>
@@ -140,9 +192,24 @@ body{
     <h1>Welcome to Our Home</h1>
     <h6>(page)</h6>
     <h1>!</h1></br>
-        <img src= "C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\wipeyourshoes.jpg" height = "50%" width="50%"> </br>
+        <img src= "images\wipeyourshoes.jpg" height = "320px" width="420px"> </br>
+    <h2>If you DON'T enjoy, bad puns, stupid jokes, and other useless jokes, DO NOT continue from this page!</br></br>Here's a few memes to start off with:</br></h2>
+<img src = "images\couples.jpg"           height = "360px"   width = "251.20px">
+<img src = "images\doyouwanttobuild.jpg"  height = "360px"   width = "303.65px">
+<img src = "images\mythyou.jpg"           height = "360px"   width = "193.6px">
+<img src = "images\jedisandnerds.jpg"     height = "360px"   width = "304.76px">
+<img src = "images\womanchinese.jpg"      height = "360px"   width = "388.18px">
+<img src = "images\necks.jpg"             height = "360px"   width = "360.00px">
+<img src = "images\locomotive.jpg"        height = "360px"   width = "382.68px">
+<img src = "images\snake.jpg"             height = "360px"   width = "180.00px">
+<img src = "images\take4.jpg"             height = "360px"   width = "420.56px">
+<img src = "images\workaward.jpg"         height = "360px"   width = "360.00px">
+<img src = "images\classtime.jpg"         height = "360px"   width = "537.76px">
+<img src = "images\pringlephysics.jpg"    height = "360px"   width = "359.00px">
+<img src = "images\thuglife.jpg"          height = "360px"   width = "314.56px">
+<img src = "images\mapsandsavage.jpg"     height = "360px"   width = "309.00px">
+</br><footer>
 
-<footer>
 <h3 id="left"> Built by: Kaysen Hansen</h3>
 <a class="foot" href="#top">Go to top</a>
 <h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>

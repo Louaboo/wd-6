@@ -6,43 +6,73 @@
     <title> This Is Not A Website </title>
   </head>
 <style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4c91ff;
-    transform:skewX(8deg);
-      }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transform:skewX(8deg);
+    }
 li a:not(.active) {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 70px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+  position: relative;
+
+}
+.one{
+  background: linear-gradient(225deg, #5cd9fa, #4ab4f6, #8dabff, #00a7e0);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 5s infinite;
+  animation: background-cycle 5s infinite;
+  -moz-animation: background-cycle 5s infinite;
+}
+.two{
+  background: linear-gradient(225deg, #8dabff, #00a7e0, #5cd9fa, #4ab4f6);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 5s infinite;
+  animation: background-cycle 5s infinite;
+  -moz-animation: background-cycle 5s infinite;
+}
+.three{
+  background: linear-gradient(225deg, #00a7e0, #5cd9fa, #4ab4f6, #8dabff);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 5s infinite;
+  animation: background-cycle 5s infinite;
+  -moz-animation: background-cycle 5s infinite;
+}
+li a:hover:not(.active) {
+  background: rgba(195, 203, 216, 0.8);
+  text-decoration: underline;
+}
+li a.active:hover{
+  background: rgba(12, 52, 114, 0.3);
+  text-decoration: underline;
+}
+.active {
     display: block;
-    color: #000000;
+    text-decoration: underline;
+    color: #f2f2f2;
     text-align: center;
     padding: 10px 70px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 20px;
-    position: relative
-}
-li a:hover:not(.active) {
-    background: rgba(195, 203, 216, 0.8);
-    text-decoration: underline;
-}
-li a.active:hover{
-    background: rgba(12, 52, 114, 0.3);
-    text-decoration: underline;
-}
-.active {
-      display: block;
-      background-color: #0c3472;
-      text-decoration: underline;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 10px 70px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 20px;
-      position: relative
+    position: relative;
+
+    background: linear-gradient(225deg, #1d424b, #1b4057, #2c354f, #003040);
+    background-size: 10000% 10000%;
+
+    -webkit-animation: background-cycle 5s infinite;
+    animation: background-cycle 5s infinite;
+    -moz-animation: background-cycle 5s infinite;
 }
 #nav {
   display: table;
@@ -106,7 +136,10 @@ a.foot:link{
 }
 body{
   margin:75px 0px 75px 5px;
-
+  background-image: url("background1.png");
+  background-repeat: repeat;
+  background-size: cover;
+}{
   background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
   background-size: 10000% 10000%;
 
@@ -124,11 +157,9 @@ body{
       100%{background-position:0% 96%}
   }
   th, tr, td{
-    border: 3px solid blue;
-
-}
+    border: 3px solid blue;}
 table{
-    width: 100%;
+    width: auto;
 }
 tr:hover:not(.table-head){
     background-color: black;
@@ -137,17 +168,20 @@ tr:hover:not(.table-head){
 .table-head{
   background-color: transparent;
 }
-#mycover{
+.color-div{
   background-color: black;
+}
+img{
+  padding-top: 50px;
 }
 
 </style>
   <nav>
     <ul id="nav">
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home Page</a></li>
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
-      <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
+      <li><a class="one" href="index.html">Home Page</a></li>
+      <li><a class="two" href="jokes.html">Jokes and Puns</a></li>
+      <li><a class="three" href="oxymorons.html">Oxymorons for Morons</a></li>
+      <li><a class="active" href="engineersconversions.html">Engineers Conversions</a></li>
     </ul>
   </nav>
 
@@ -168,6 +202,19 @@ tr:hover:not(.table-head){
         document.getElementById("mycover").style.backgroundColor = "transparent"
     }
   </script>!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </br>
+  <button type="button" id="uncover-color">Uncover All Answers</button>
+
+      <script type="text/javascript">
+  $('body').on('click', '#uncover-color', function(){
+  $('.color-div').each(function(){
+  $(this).css('background-color', $(this).data('color'));
+  })
+  })
+  </script>
+
+    <img src = "images/engineerschart.jpg" style ="float : right" alt = "Engineers Flow Chart Pic">
 
       <table>
         <tr>
@@ -178,117 +225,117 @@ tr:hover:not(.table-head){
         <tr>
           <td>The Ratio of an igloo's circumference ot its diameter</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">Eskimo Pi</td>
+          <td   class="color-div" data-color="transparent">Eskimo Pi</td>
         </tr>
         <tr>
           <td>2000 pounds of chinese soup</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">Won Ton</td>
+          <td   class="color-div" data-color="transparent">Won Ton</td>
         </tr>
         <tr>
           <td>1 millionth of a mouthwash</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 microscope</td>
+          <td   class="color-div" data-color="transparent">1 microscope</td>
         </tr>
         <tr>
           <td>Time between slipping on a peel and smacking the pavement</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 bananosecond</td>
+          <td   class="color-div" data-color="transparent">1 bananosecond</td>
         </tr>
         <tr>
           <td>16.5 feet in the Twilight Zone</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 Rod Serling</td>
+          <td   class="color-div" data-color="transparent">1 Rod Serling</td>
         </tr>
         <tr>
           <td>Time it takes to sail 220 yards at 1 nautrical mile per hour</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 knotfurlong</td>
+          <td   class="color-div" data-color="transparent">1 knotfurlong</td>
         </tr>
         <tr>
           <td>Half of a large intestine</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 semicolon</td>
+          <td   class="color-div" data-color="transparent">1 semicolon</td>
         </tr>
         <tr>
           <td>1,000,000 aches and pains</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">One megahurtz</td>
+          <td   class="color-div" data-color="transparent">One megahurtz</td>
         </tr>
         <tr>
           <td>Basic unit of laryngitis</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 hoarsepower</td>
+          <td   class="color-div" data-color="transparent">1 hoarsepower</td>
         </tr>
         <tr>
           <td>453.6 graham crackers</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 pound cake</td>
+          <td   class="color-div" data-color="transparent">1 pound cake</td>
         </tr>
         <tr>
           <td>1 million-million microphones</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 megaphone</td>
+          <td   class="color-div" data-color="transparent">1 megaphone</td>
         </tr>
         <tr>
           <td>2 million bicycles</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">2 megacycles</td>
+          <td   class="color-div" data-color="transparent">2 megacycles</td>
         </tr>
         <tr>
           <td>2000 mockingbirds</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">2 kilomockingbirds</td>
+          <td   class="color-div" data-color="transparent">2 kilomockingbirds</td>
         </tr>
         <tr>
           <td>52 cards</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 decacards</td>
+          <td   class="color-div" data-color="transparent">1 decacards</td>
         </tr>
         <tr>
           <td>1 kilogram of falling figs</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 FigNewton</td>
+          <td   class="color-div" data-color="transparent">1 FigNewton</td>
         </tr>
         <tr>
           <td>1000 mililiters of wet socks</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 literhosen</td>
+          <td   class="color-div" data-color="transparent">1 literhosen</td>
         </tr>
         <tr>
           <td>1 millionth of a fish</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 microfiche</td>
+          <td   class="color-div" data-color="transparent">1 microfiche</td>
         </tr>
         <tr>
           <td>1 trillion pins</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 terrapin</td>
+          <td   class="color-div" data-color="transparent">1 terrapin</td>
         </tr>
         <tr>
           <td>10 rations</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 decoration</td>
+          <td   class="color-div" data-color="transparent">1 decoration</td>
         </tr>
         <tr>
           <td>100 rations</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">1 C-ration</td>
+          <td   class="color-div" data-color="transparent">1 C-ration</td>
         </tr>
         <tr>
           <td>4 nickles</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">2 paradigms</td>
+          <td   class="color-div" data-color="transparent">2 paradigms</td>
         </tr>
         <tr>
           <td>2.4 statue miles of intravenous surgical tubing at Yal University Hospital</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover"> 1 IV League</td>
+          <td   class="color-div" data-color="transparent"> 1 IV League</td>
         </tr>
         <tr>
           <td>100 senators</td>
           <td><pre><h5> = </h5></pre></td>
-          <td id="mycover">Not 1 decision</td>
+          <td   class="color-div" data-color="transparent">Not 1 decision</td>
         </tr>
       </table>
 

@@ -6,43 +6,73 @@
     <title> This Is Not A Website </title>
   </head>
 <style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4c91ff;
-    transform:skewX(8deg);
-      }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transform:skewX(8deg);
+    }
 li a:not(.active) {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 70px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+  position: relative;
+
+}
+.one{
+  background: linear-gradient(225deg, #5cd9fa, #4ab4f6, #8dabff, #00a7e0);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 5s infinite;
+  animation: background-cycle 5s infinite;
+  -moz-animation: background-cycle 5s infinite;
+}
+.two{
+  background: linear-gradient(225deg, #8dabff, #00a7e0, #5cd9fa, #4ab4f6);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 5s infinite;
+  animation: background-cycle 5s infinite;
+  -moz-animation: background-cycle 5s infinite;
+}
+.three{
+  background: linear-gradient(225deg, #00a7e0, #5cd9fa, #4ab4f6, #8dabff);
+  background-size: 10000% 10000%;
+
+  -webkit-animation: background-cycle 5s infinite;
+  animation: background-cycle 5s infinite;
+  -moz-animation: background-cycle 5s infinite;
+}
+li a:hover:not(.active) {
+  background: rgba(195, 203, 216, 0.8);
+  text-decoration: underline;
+}
+li a.active:hover{
+  background: rgba(12, 52, 114, 0.3);
+  text-decoration: underline;
+}
+.active {
     display: block;
-    color: #000000;
+    text-decoration: underline;
+    color: #f2f2f2;
     text-align: center;
     padding: 10px 70px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 20px;
-    position: relative
-}
-li a:hover:not(.active) {
-    background: rgba(195, 203, 216, 0.8);
-    text-decoration: underline;
-}
-li a.active:hover{
-    background: rgba(12, 52, 114, 0.3);
-    text-decoration: underline;
-}
-.active {
-      display: block;
-      background-color: #0c3472;
-      text-decoration: underline;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 10px 70px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 20px;
-      position: relative
+    position: relative;
+
+    background: linear-gradient(225deg, #1d424b, #1b4057, #2c354f, #003040);
+    background-size: 10000% 10000%;
+
+    -webkit-animation: background-cycle 5s infinite;
+    animation: background-cycle 5s infinite;
+    -moz-animation: background-cycle 5s infinite;
 }
 #nav {
   display: table;
@@ -104,7 +134,10 @@ a.foot:link{
 }
 body{
   margin:75px 0px 75px 5px;
-
+  background-image: url("background1.png");
+  background-repeat: repeat;
+  background-size: cover;
+}{
   background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
   background-size: 10000% 10000%;
 
@@ -142,10 +175,10 @@ tr:hover:not(.table-head){
 </style>
   <nav>
     <ul id="nav">
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\index.html">Home Page</a></li>
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\jokes.html">Jokes & Puns</a></li>
-      <li><a class="active" href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\oxymorons.html">Oxymorons for Morons</a></li>
-      <li><a href="C:\Users\kaysenhansen\Documents\GitHub\wd-6\KaysenHansen\engineersconversions.html">Engineers Conversions</a></li>
+      <li><a class = "one" href="index.html">Home Page</a></li>
+      <li><a class = "three" href="jokes.html">Jokes and Puns</a></li>
+      <li><a class="active" href="oxymorons.html">Oxymorons for Morons</a></li>
+      <li><a class = "two" href="engineersconversions.html">Engineers Conversions</a></li>
     </ul>
   </nav>
 
@@ -161,9 +194,10 @@ tr:hover:not(.table-head){
     }
     function uncover() {
         document.getElementById("mycover").style.backgroundColor = "transparent"
-    }-->
+    }
+  </script>!-->
+<h3>
   </script>
-
       <table>
         <tr>
           <th class="table-head">Oxymorons for Morons!</th>
@@ -247,7 +281,7 @@ tr:hover:not(.table-head){
           <td id="mycover">Why do we drive on a parkway and park on a driveway?</td>
         </tr>
       </table>
-
+</h3>
 <footer>
 <h3 id="left"> Built by: Kaysen Hansen</h3>
 <a class="foot" href="#top">Go to top</a>
