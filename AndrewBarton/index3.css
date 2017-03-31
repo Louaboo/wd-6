@@ -15,7 +15,17 @@ p.footer {
 p {
   color:white;
   text-indent: 20px;
-  font-size: 150%;
+  font-size: 125%;
+}
+div.ships :hover {
+ -webkit-animation: ships 3s linear 1 alternate;
+}
+@-webkit-keyframes ships {
+  0% {width: 300px; height: 150px}
+  25% {width: 300px; height: 150px}
+  50% {width: 300px; height: 150px}
+  75% {width: 300px; height: 150px}
+  100% {width: 300px; height: 150px}
 }
 h1 {
   color: #ffffff;
