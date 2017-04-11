@@ -6,7 +6,7 @@ from the form in <p id='greet'>.
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Exercise 4</title>
+  <title>Exercise 5</title>
 </head>
 <body>
   <h1>Welcome to JavaScript Programming</h1>
@@ -22,6 +22,9 @@ from the form in <p id='greet'>.
   <p id='greet'></p>
   <button onclick="greet()">Greeting</button>
   <br>
+  <p id="demo"></p>
+
+
   <script>
 
   function display() {
@@ -33,10 +36,10 @@ from the form in <p id='greet'>.
       }
       document.getElementById("demo").innerHTML = text;
   }
-      function greet(){
 
+      function greet() {
+        alert("Welcome"+ document.getElementById("frm1"));
       }
-    <p id="demo"></p>
   </script>
 </body>
 </html>
