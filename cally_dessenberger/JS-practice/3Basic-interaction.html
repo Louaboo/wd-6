@@ -1,0 +1,25 @@
+<!--Fill the script tag so that the following happen:
+The element with id='text' is get changed to "Java and JavaScript are not the same thing"
+The page greets you with an alert that says "Welcome!"
+The console (F12) reports "Everything worked!"-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Exercise 3</title>
+  <script>
+function Function() {
+    alert("Welcome!");
+}
+</script>
+</head>
+<body>
+  <body onload="Function()">
+  <h1>Learning JavaScript</h1>
+  <p id='text' onclick="myFunction()"> Text</p>
+  <script type="text/JavaScript">
+  function myFunction() {
+      document.getElementById('text').innerHTML = "Java and JavaScript are not the same thing";}
+console.log("Everything worked!")
+  </script>
+</body>
+</html>
