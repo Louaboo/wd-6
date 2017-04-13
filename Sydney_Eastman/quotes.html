@@ -66,17 +66,58 @@
    }
   h1 {
     background-color: #FF69B4;
-    color: #000000;
+    color: #9932CC;
     text-shadow: 4px 4px #778899;
     font-family: monospace;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 4.5px;
   }
   p {
     font-family: cursive;
     font-size: 25px;
     text-align: center;
-    color: black;
+    color: saddlebrown;
+  }
+  div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+  }
+
+  div.gallery:hover {
+      border: 1px solid #777;
+  }
+
+  div.gallery img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.desc {
+      padding: 15px;
+      text-align: center;
+  }
+  .rotateimg{
+    -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  }
+  .rotateimg2{
+    -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  }
+  .360{
+    -webkit-transform:rotate(2700deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
   }
   </style>
   <body>
@@ -93,15 +134,54 @@
         </div>
       </li>
     </ul>
-    <audio src="longlive.mp3" autoplay>
-      <source src="longlive.mp3" type="audio/ogg">
-      <source src="longlive.mp3" type="audio.mpeg">
-    </audio>
     <h1>Quotes</h1>
     <p>"It's okay to be a glowstick.<br>Sometimes you have to break<br> before you can shine."</br><br>"You were born to be real, not perfect."</br></p>
     <p>"Home is now behind you, the world is ahead."</p>
     <p>"No beauty shines brighter than that of a good heart."</p>
     <p>"Sometimes God has to break us to make us. It's a bend, it's not the end. We're like glow sticks,<br>no matter how much we're bent and broken our light still shines."</br></p>
+<<<<<<< HEAD
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Q3MEULnJ1gM?rel=0" frameborder="0" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/3V52HfGb890?rel=0" frameborder="0" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/epaPblMu1jo?rel=0" frameborder="0" allowfullscreen></iframe>
+=======
+  </div>
+  <div class="gallery">
+    <a target="_blank">
+      <img src="pictures/windyroad.jpg" alt="Windy Road" width="300" height="200" class="rotateimg">
+    </a>
+    <div class="desc">I went on a walk up in the mountians and took this picture.</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank">
+      <img src="pictures/howatireworks.jpg" alt="Forest" width="600" height="400" class="rotateimg">
+    </a>
+    <div class="desc"></div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank">
+      <img src="pictures/flower.jpg" alt="Northern Lights" width="600" height="400" class="rotateimg2">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank">
+      <img src="pictures/bridge.jpg" alt="Mountains" width="600" height="400" class="rotateimg">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  <div class="gallery">
+    <a target="_blank">
+      <img src="pictures/park.jpg" alt="Mountains" width="600" height="400" class="rotateimg">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  <div class="gallery">
+    <a target="_blank">
+      <img src="pictures/rainbow.jpg" alt="Mountains" width="600" height="400" class="rotateimg">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+>>>>>>> 81cb85daaadeacce98fe5a9898d423d64165e060
   </body>
   </html>
