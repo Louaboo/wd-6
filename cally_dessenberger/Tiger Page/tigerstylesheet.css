@@ -25,3 +25,23 @@ html {
 background: linear-gradient(#fff0e6, #b34700, #331400, #fff0e6, #b34700, #331400, #b34700, #fff0e6, #ff751a, #331400, #fff0e6)
 
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #b34700;
+    text-decoration: none;
+    color: #331400;

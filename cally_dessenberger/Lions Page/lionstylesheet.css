@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #ffcc80;
+    text-decoration: none;
+    color: #995c00;
+  }
+
+  p {
+     font-size: 20px;
+     font-family: 'Exo', sans-serif;
+  }
+  h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+  }
+html {
+  background-color:#f5d4a3;
+}
