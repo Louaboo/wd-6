@@ -1,62 +1,12 @@
 <!DOCTYPE HTML>
-<!-- Home Page you twat-->
+<!-- Home Page-->
 <html>
 <head>
       <link href='style.css' type='text/css' rel='stylesheet'/>
-  <title> Welcome to fight club</title>
+  <title> All things Dillan </title>
 </head>
-<body>
-  <div class="container">
-<center><h1>
-  <p>
-    Fight everyone and everything <br>
-      <a id="main" class="btn" href="https://csp-nuames-jsimonsen.github.io/wd-6/Dillan_Hart/warning"> BUTTON MACHINE BROKE</a>
-    </center></h1>
-      </p>
+<img src="photos/RomanAquaduct.jpg" alt="Bckground" width="1920px" height="1080px">
 
-      <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#about" id="play">How to play</a>
-          <a href="#base" id="did">How I did it</a>
-          <a href="#blog" id="characters">List of characters</a>
-        </div>
-      </div>
 
-      <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-      }
 
-      function filterFunction() {
-          var input, filter, ul, li, a, i;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          div = document.getElementById("myDropdown");
-          a = div.getElementsByTagName("a");
-          for (i = 0; i < a.length; i++) {
-              if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-                  a[i].style.display = "";
-              } else {
-                  a[i].style.display = "none";
-              }
-          }
-      }
-      window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-      </script>
-</body>
   </html>
