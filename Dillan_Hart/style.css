@@ -4,8 +4,12 @@
 	padding: 0;
 }
 
-img{
-  opacity: 0.6;
+#firstname {
+  opacity: 1;
+  width: 10%;
+  height: 10%;
+  position: center center;
+
 }
 
 html, body {
@@ -23,15 +27,14 @@ body {
 }
 
 div.container {
-	align-items: top;
-	align-self: center;
-
-	display: flex;
-	border-radius: 100%;
-	flex-direction: column;
-	min-height: 1000px;
-	justify-content: center;
-	width: 1000px;
+  background-image: url("Photos/RomanAquaduct.jpg");
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20%;
+  width: auto;
+  height: auto;
 }
 
 
