@@ -1,0 +1,30 @@
+<!--Add JavaScript so that the button displays the date and time
+in the <p id='demo'>.-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Exercise 1</title>
+</head>
+<body>
+  <h1>JavaScript is not Java</h1>
+  <button>Click me to display the Date and Time</button>
+  <p id="demo"></p>
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</body>
+</html>

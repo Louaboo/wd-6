@@ -14,7 +14,16 @@ the background color of the page using a function called color().-->
   <br>
   <p>Click "Colorize" to change the background color.</p>
   <script>
+  var place =0;
+     function color() {
 
+         var colorList = ["red","green","blue","violet","black"];
+
+         document.body.style.backgroundColor = colorList[place];
+         place++;
+
+         if (place ===colorList.length) place=0;
+     }
   </script>
 </body>
 </html>
