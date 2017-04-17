@@ -76,7 +76,17 @@
     footer{
      font-family: 'Sofia';font-size: 22px;
     }
-
+div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  }
+  @-webkit-keyframes example{
+    from {background-color: black;}
+    to {background-color: pink;}
+  }
    </style>
 <body>
    <ul>
@@ -92,18 +102,15 @@
        </div>
      </li>
    </ul>
+   <div></div>
    <h1>WELCOME!</h1>
-<<<<<<< HEAD
    <p id="rcorners6"><a href="button.html"><em>Click Me!</em></a></p>
-=======
 <p>I love Hello Kitty.</p>
    <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
  Date and Time</button>
 <p id="demo"></p>
->>>>>>> 123c19ff29ec3b5ce470bc9571976d294fd27e74
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_M2Ew5w0lWs?rel=0" frameborder="0" allowfullscreen></iframe>
 <footer>hi!</footer>
-
 </body>
 </html>
