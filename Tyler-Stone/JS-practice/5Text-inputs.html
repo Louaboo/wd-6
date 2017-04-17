@@ -11,10 +11,9 @@ from the form in <p id='greet'>.
 <body>
   <h1>Welcome to JavaScript Programming</h1>
   <form id='info'>
-    First name: <input id = "fe" type="text" name="fname" value="First">
+    First name: <input id='yes' type="text" name="fname">
     <br>
-    Last name: <input id = "le" type="text" name="lname" value="Last">
-    <br>
+    Last name: <input id='maybe' type="text" name="lname">
   </form>
   <button onclick="display()">Submit</button>
   <p>Click "Submit" to display the value of each element in the form.<br>
@@ -25,18 +24,18 @@ from the form in <p id='greet'>.
   <button onclick="greet()">Greeting</button>
   <br>
   <script>
-  function display() {
-      var x = document.getElementById("frm1");
-      var text = "";
+    function display() {
+      var x = document.getElementById('info');
+      var text= "";
       var i;
       for (i = 0; i < x.length ;i++) {
-          text += x.elements[i].value + "<br>";
+        text += x.elements[i].value + "<br>";
       }
       document.getElementById("text").innerHTML = text;
-  }
-      function greet() {
-        alert("Welcome" + " " + document.getElementById("fe").value + " " + document.getElementById("le").value);
-      }
+    }
+    function greet() {
+      alert("Welcome" + " " + document.getElementById('yes').value + " " + document.getElementById('maybe').value)
+    }
   </script>
 </body>
 </html>
