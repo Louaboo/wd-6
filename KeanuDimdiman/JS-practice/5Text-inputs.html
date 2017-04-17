@@ -24,7 +24,18 @@ from the form in <p id='greet'>.
   <button onclick="greet()">Greeting</button>
   <br>
   <script>
-
+  function display() {
+    var x = document.getElementById('info');
+    var text= "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+      text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("text").innerHTML = text;
+  }
+  function greet() {
+    alert("Welcome" + " " + document.getElementById('yes').value + " " + document.getElementById('maybe').value)
+  }
   </script>
 </body>
 </html>
