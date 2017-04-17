@@ -1,0 +1,15 @@
+body{
+  background-image: url("79d.gif");
+  background-size: 50%, 50%;
+}
+.button{
+  border: none;
+  background-color: white;
+  opacity: .05;
+  height: 5px;
+  width: 10px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  cursor: auto;
+}
