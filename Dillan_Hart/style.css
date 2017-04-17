@@ -3,16 +3,21 @@
 	padding: 0;
 }
 
+img{
+	visibility: idden;
+	transition:
+}
+
 #barcelona{
   position: absolute;
   opacity: 0.7;
   transition: 0.1s;
-  left: 5%;
+  left: 5.5%;
   top: 25%;
-  height: 20%;
-  width: 20%;
+  height: 216px;
+  width: 400px;
   border-radius: 5%;
-  border:5px solid black;
+  border:5px solid rgb(43,53,57);
 }
 
 
@@ -22,52 +27,105 @@
     opacity: 1;
     transition: 0.1s;
     left: 4.5%;
-    height: 21%;
-    width: 21%;
+		top: 24.5%;
+    height: 232.2px;
+    width: 440px;
 }
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: relative;
-    z-index: 1;
-    top: 42%;
-    left: 12.5%;
-    margin-left: -60px;
-    opacity: 1;
-    transition: opacity 1s;
-
+#darkbasepro900{
+  position: absolute;
+  opacity: 0.7;
+  transition: 0.1s;
+  left: 5.5%;
+  bottom: 25%;
+  height: 216px;
+  width: 400px;
+  border-radius: 5%;
+  border:5px solid rgb(43,53,57);
 }
 
-.tooltip .tooltiptext::after {
-    content: "";
+
+
+#darkbasepro900:hover {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
     opacity: 1;
-    transition: 1s;
+    transition: 0.1s;
+    left: 4.5%;
+		bottom: 24.5%;
+    height: 232.2px;
+    width: 440px;
 }
 
-.tooltip:hover .tooltiptext {
+#steep{
   position: absolute;
-    visibility: visible;
-    opacity: 0.8;
-    transition: 1s;
+  opacity: 0.7;
+  transition: 0.1s;
+  left: 29.5%;
+  bottom: 25%;
+  height: 216px;
+  width: 400px;
+  border-radius: 5%;
+  border:5px solid rgb(43,53,57);
 }
 
-.tooltiptext:hover {
+
+
+#steep:hover {
+    position: absolute;
+    opacity: 1;
+    transition: 0.1s;
+    left: 28.5%;
+		bottom: 24.5%;
+    height: 232.2px;
+    width: 440px;
+}
+
+#dragracing{
   position: absolute;
-  opacity: 0.8;
-  transition: 1s;
+  opacity: 0.7;
+  transition: 0.1s;
+  left: 29.5%;
+  top: 25%;
+  height: 216px;
+  width: 400px;
+  border-radius: 5%;
+  border:5px solid rgb(43,53,57);
+}
+
+
+
+#dragracing:hover {
+    position: absolute;
+    opacity: 1;
+    transition: 0.1s;
+    left: 28.5%;
+		top: 24.5%;
+    height: 232.2px;
+    width: 440px;
+}
+
+#darkside{
+  position: absolute;
+  opacity: 0.7;
+  transition: 0.1s;
+  right: 29.5%;
+  top: 25%;
+  height: 216px;
+  width: 400px;
+  border-radius: 5%;
+  border:5px solid rgb(43,53,57);
+}
+
+
+
+#darkside:hover {
+    position: absolute;
+    opacity: 1;
+    transition: 0.1s;
+    right: 28.5%;
+		top: 24.5%;
+    height: 232.2px;
+    width: 440px;
 }
 
 #RomanAquaduct{
@@ -78,6 +136,7 @@
   top: 0%;
   left: 0%;
   opacity: 0.6;
+	visibility: visible;
 }
 
 html, body {
