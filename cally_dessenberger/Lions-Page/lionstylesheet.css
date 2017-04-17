@@ -18,16 +18,17 @@ li a {
     background-color: #ffcc80;
     text-decoration: none;
     color: #995c00;
+    font-family: 'Gloria Hallelujah', cursive;
   }
 
   p {
      font-size: 20px;
-     font-family: 'Exo', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
   }
   h1 {
-    font-family: 'Exo', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
     font-size: 30px;
   }
 html {
-background: linear-gradient(#eba947,#f0bf75, white);
+background: linear-gradient(white, #f0bf75, #f0bf75,#eba947);
 }
