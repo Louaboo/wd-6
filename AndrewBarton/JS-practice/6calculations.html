@@ -7,44 +7,43 @@
 <body>
   <h1>Simple Web Calculator</h1>
   <form>
-    First number: <input type="number">
+    First number: <input id = "1" type="number">
     <br>
-    Second number: <input type="number">
+    Second number: <input id = "2" type="number">
   </form>
-  <button onclick="#">Add</button>
-  <button onclick="#">Subtract</button>
-  <button onclick="#">Multiply</button>
-  <button onclick="#">Divide</button>
+  <button onclick="add()">Add</button>
+  <button onclick="sub()">Subtract</button>
+  <button onclick="mul()">Multiply</button>
+  <button onclick="div()">Divide</button>
   <p id="sol"></p>
   <script type="text/javascript">
-    var sol = document.getElementById('#');
     function add(){
       var num = document.getElementsByTagName("INPUT");
-      var x =
-      var y =
-      var z =
-      sol.innerHTML=z;
+      var x =document.getElementById('1').value;
+      var y =document.getElementById('2').value;
+      var z = Number(x) + Number(y);
+      document.getElementById('sol').innerHTML=z;
     }
     function sub(){
       var num = document.getElementsByTagName("INPUT");
-      var x =
-      var y =
-      var z =
-      sol.innerHTML=z;
+      var x =document.getElementById('1').value;
+      var y =document.getElementById('2').value;
+      var z = x - y;
+      document.getElementById('sol').innerHTML=z;
     }
     function mul(){
       var num = document.getElementsByTagName("INPUT");
-      var x =
-      var y =
-      var z =
-      sol.innerHTML=z;
+      var x =document.getElementById('1').value;
+      var y =document.getElementById('2').value;
+      var z = x * y;
+      document.getElementById('sol').innerHTML=z;
     }
     function div(){
     var num = document.getElementsByTagName("INPUT");
-    var x =
-    var y =
-    var z =
-    sol.innerHTML=z;
+    var x =document.getElementById('1').value;
+    var y =document.getElementById('2').value;
+    var z = x / y;
+    document.getElementById('sol').innerHTML=z;
   }
   </script>
 </body>
