@@ -10,6 +10,11 @@ body{
   width: 10px;
   position: relative;
   top: 100px;
-  left: 200px;
+  left: 500px;
   cursor: auto;
+}
+h1{
+  background-color: white;
+  width: 250px;
+  height: 90px;
 }
