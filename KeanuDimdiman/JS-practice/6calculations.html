@@ -22,28 +22,28 @@
       var num = document.getElementsByTagName("INPUT");
       var x = document.getElementById("1").value;
       var y =document.getElementById("2").value;
-      var z = x + y;
+      var z = Number(x) + Number(y);
     document.getElementById("sol").innerHTML="The Sum is:" + z;
     }
     function sub(){
       var num = document.getElementsByTagName("INPUT");
       var x =document.getElementById("1").value;
       var y =document.getElementById("2").value;
-      var z = x - y;
+      var z = Number(x) - Number(y);
   document.getElementById("sol").innerHTML="The Difference is:" + z;
     }
     function mul(){
       var num = document.getElementsByTagName("INPUT");
       var x =document.getElementById("1").value;
       var y =document.getElementById("2").value;
-      var z = x * y;
+      var z = Number(x) * Number(y);
     document.getElementById("sol").innerHTML="The Product is:" + z;
     }
     function div(){
     var num = document.getElementsByTagName("INPUT");
     var x =document.getElementById("1").value;
     var y =document.getElementById("2").value;
-    var z = x / y;
+    var z = Number(x) / Number(y);
   document.getElementById("sol").innerHTML="The Quotient is:" + z;
   }
   </script>
