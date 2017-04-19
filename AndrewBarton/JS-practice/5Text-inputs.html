@@ -34,7 +34,13 @@ from the form in <p id='greet'>.
       document.getElementById("text").innerHTML = text;
     }
     function greet() {
-      alert("Welcome" + " " + document.getElementById('yes').value + " " + document.getElementById('maybe').value)
+      var Y = document.getElementById('info');
+      var textY= "";
+      var i;
+      for (i = 0; i < Y.length ;i++) {
+        textY += x.elements[i].value + "<br>";
+      }
+      document.getElementById("greet").innerHTML = textY;
     }
   </script>
 </body>
