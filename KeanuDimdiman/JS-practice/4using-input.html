@@ -7,23 +7,16 @@ the background color of the page using a function called color().-->
 </head>
 <body id="body">
   <h1>Change the Background Color</h1>
-  <form id="info">
-    Color: <input type="color" name="color">
+  <form>
+    Color: <input id = "info" type = "color" name = "color">
   </form>
   <button onclick="color()">Colorize</button>
   <br>
   <p>Click "Colorize" to change the background color.</p>
   <script>
-  var place =0;
-     function color() {
-
-         var colorList = ["red","green","blue","violet","black"];
-
-         document.body.style.backgroundColor = colorList[place];
-         place++;
-
-         if (place ===colorList.length) place=0;
-     }
+        function color(){
+            document.bgColor = document.getElementById('info').value;
+          }
   </script>
 </body>
 </html>
