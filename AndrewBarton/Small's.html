@@ -4,8 +4,13 @@
   <link rel="stylesheet" type="text/css" href="index2.css">
   <title>Andrew's page of specialness</title>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <script>
+  function js () {
+    alert ("Welcome to Elite Dangerous.");
+  }
+  </script>
 </head>
-<body>
+<body onload="js()">
   <ul>
     <li><a  href="index.html">Home</a></li>
     <li class="dropdown">
@@ -25,8 +30,12 @@
     Usually the bigger the ship the more armor and shields.
     Also the costs are for only the base ship.</h4>
     <div class="ships">
-      <img class="sidewinder" src="http://universalcartographics.org/wp-content/uploads/2015/02/ship-delacy-sidewinder2.jpg" height="25" width="50">
+      <img class="sidewinder" src="http://universalcartographics.org/wp-content/uploads/2015/02/ship-delacy-sidewinder2.jpg" usemap="#sidewinder" height="25" width="50">
     </div>
+    <map name="sidewinder">
+      <area shape="rect" coords="0,0,150,150" alt="sidewinder" href="http://elite-dangerous.wikia.com/wiki/Elite_Dangerous">
+      <area shape="rect" coords="151,151,">
+    </map>
   <p>
     Sidewinder: You start with this ship.
     You can either start with extra module's that are better, or with extra cash.
@@ -162,7 +171,7 @@ It has 2 small hardpoints, and 1 medium hardpoint.
 </p>
 </body>
 <audio controls>
-  
+
 <footer>
   <p class="footer"> Information from: Elite-dangerous.wikia.com. For more information go to:
 <a href="http://elite-dangerous.wikia.com/wiki/Elite_Dangerous" target="_blank">Elite Dangerous Wikia</a>
