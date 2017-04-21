@@ -7,13 +7,15 @@ The console (F12) reports "Everything worked!"-->
 <head>
   <title>Exercise 3</title>
 </head>
-<body>
+<body onload = "myFunction()">
   <h1>Learning JavaScript</h1>
   <p id='text'></p>
   <script type="text/JavaScript">
-    //replace with innerHTML JS
-    //replace with alert JS
-    //replace with log JS
+    document.getElementById("text").innerHTML = "Java and JavaScript are not the same thing"
+    function myFunction() {
+      alert("Welcome!");
+    }
+    console.log("Everything worked!")
   </script>
 </body>
 </html>
