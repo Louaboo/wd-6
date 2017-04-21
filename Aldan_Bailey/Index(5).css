@@ -42,3 +42,30 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+.classname {
+-webkit-animation: cssAnimation 6.7699s infinite ease;
+-moz-animation: cssAnimation 6.7699s infinite ease;
+-o-animation: cssAnimation 6.7699s infinite ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(0deg) scale(2.304) skew(1deg) translate(700px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(0deg) scale(2.304) skew(1deg) translate(700px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(0deg) scale(2.304) skew(1deg) translate(700px); }
+}
+
+.grayscale {
+
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+
+filter: grayscale(100%);
+
+}
