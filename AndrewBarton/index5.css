@@ -12,6 +12,20 @@ p.footer {
   text-align: center;
   font-size: 250%;
 }
+table {
+  font-family arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
++  color: purple;
+}
+
+tr {
+  background-color: #dddddd;
+}
 p {
   color:white;
   text-indent: 20px;
