@@ -17,6 +17,10 @@ p {
   text-indent: 20px;
   font-size: 125%;
 }
+h4 {
+  color: #ffffff;
+  font-size: 125%
+}
 div.ships :hover {
  -webkit-animation: ships 3s linear 1 alternate;
 }

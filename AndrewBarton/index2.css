@@ -17,7 +17,10 @@ p {
   text-indent: 20px;
   font-size: 125%;
 }
-
+h4 {
+  color: #ffffff;
+  font-size: 125%
+}
 h1 {
   color: #ffffff;
   text-align: center;
