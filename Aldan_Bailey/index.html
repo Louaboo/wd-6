@@ -84,6 +84,7 @@ text-shadow: 2px 2px 5px blue;
 }
 
 
+
 </style>
 
 <br>
@@ -102,7 +103,9 @@ text-shadow: 2px 2px #FFFF00;
 
 <style>
 
-h4 {
+h4  {
+
+
 
 text-shadow: 2px 2px #00FFFF;
 
@@ -147,8 +150,12 @@ align="center"><h1><pre>Dirt Biking   Dirt Biking   Dirt Biking   Dirt Biking   
 
   <P STYLE="border-style: dotted; border-color: #ffccff";>
     <img src="Devils.jpg" width="520" height="404">
-    <img src="Devils_1.jpg" width="520" height="404">
-    <embed src="Devils3.MP4" autostart="true" loop="false" height="600" width="800">
+    <img src="Devils_1.jpg" width="520" height="404" usemap="#buildingmap">
+    <map name="buildingmap">
+      <area shape="rect" coords="0,0,520,404" alt="Devils" href="index2.html">
+    </map>
+
+    <embed src="Devils3.mp4" autostart="true" loop="false" height="600" width="800">
 
 </p>
 
@@ -188,7 +195,7 @@ height="404"></marquee></body>
 
 <br>
 
-<embed src="Truck.MP4" autostart="true" loop="true" height="800" width="1000">
+<embed src="Truck.mp4" autostart="true" loop="true" height="800" width="1000">
 <br>
 <embed src="Good_hill.MP4" autostart="true" loop="true" width="920"height="620">
 <embed src="IMG_1295.MOV" autostart="true" loop="true" width="920"height="620">
@@ -202,170 +209,10 @@ loop="true"></marquee>
 
 <br>
 
-<style type="text/css">
 
-<!--
 
-.mouse
-
-{
-
-position:absolute;
-
-visibility:visible;
-
-top:-50px;
-
-font-size:10px;
-
-font-family:comic sans ms;
-
-font-weight:bold;
-
-color:black;
-
-}
-
-body
-
-{
-
-width:100%;
-
-overflow-x:hidden;
-
-overflow-y:scroll;
-
-}
-
--->
-
-</style>
-
-<script>
-
-var x,y
-
-var step=15
-
-var doit=0
-
-var text="Aldan's Life "
-
-text=text.split("")
-
-var xpos=new Array()
-
-for (i=0;i<=text.length-1;i++) {
-
-xpos[i]=-50
-
-}
-
-var ypos=new Array()
-
-for (i=0;i<=text.length-1;i++) {
-
-ypos[i]=-50
-
-}
-
-function anddo(e){
-
-x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
-
-y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
-
-doit=1
-
-}
-
-function trail() {
-
-if (doit==1 && document.all) {
-
-for (i=text.length-1; i>=1; i--) {
-
-xpos[i]=xpos[i-1]+step
-
-ypos[i]=ypos[i-1]
-
-}
-
-xpos[0]=x+step
-
-ypos[0]=y
-
-for (i=0; i<text.length-1; i++) {
-
-var place = eval("span"+(i)+".style")
-
-place.posLeft=xpos[i]
-
-place.posTop=ypos[i]
-
-}
-
-}
-
-else if (doit==1 && document.layers) {
-
-for (i=text.length-1; i>=1; i--) {
-
-xpos[i]=xpos[i-1]+step
-
-ypos[i]=ypos[i-1]
-
-}
-
-xpos[0]=x+step
-
-ypos[0]=y
-
-for (i=0; i<text.length-1; i++) {
-
-var place = eval("document.span"+i)
-
-place.left=xpos[i]
-
-place.top=ypos[i]
-
-}
-
-}
-
-var timer=setTimeout("trail()",30)
-
-}
-
-</script>
-
-<script>
-
-<!-- Beginning of JavaScript -
-
-for (i=0;i<=text.length-1;i++) {
-
-document.write("<span id='span"+i+"' class='mouse'>")
-
-document.write(text[i])
-
-document.write("</span>")
-
-}
-
-if (document.layers){
-
-document.captureEvents(Event.MOUSEMOVE);
-
-}
-
-document.onmousemove = anddo;
-
-// - End of JavaScript - -->
-
-</script>
-
-<br>
+<footer>
+<div class="foooter"> <h4>Aldans Life</h4></div>
+</footer>
 
 </html>
