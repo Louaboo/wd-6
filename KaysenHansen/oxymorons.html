@@ -283,13 +283,19 @@ tr:hover:not(.table-head){
       </table>
 </h3>
 
-<script style = "float: right">
+<button type="button" onclick="show()">Picture?</button>
 
+<div id="pic" style="display: none;">
+    <img src="images/snake.jpg">
+</div>
 
-
+<script>
+    function show() {
+      document.getElementById("pic").style.display="block";
+    }
 </script>
 
-<footer>
+</hr><hr><footer>
 <h3 id="left"> Built by: Kaysen Hansen</h3>
 <a class="foot" href="#top">Go to top</a>
 <h3 id="right" class ="mirror">Built by: Kaysen Hansen</h3>

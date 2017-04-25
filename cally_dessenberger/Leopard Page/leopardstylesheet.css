@@ -19,15 +19,20 @@ li a {
     text-decoration: none;
     color: #331800;
   }
-  html {
-    background: linear-gradient(#ffe5cc,#fff2e6, white)
-  }
+
 p{
   font-size: 20px;
   font-family: 'Gloria Hallelujah', cursive;
+  color: light gray;
 }
 h1 {
   font-size: 30px;
   font-family: 'Gloria Hallelujah', cursive;
+  color:light gray;
 
+}
+body {
+  background: url(../Images/nav-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
