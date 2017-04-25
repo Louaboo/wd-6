@@ -21,9 +21,11 @@ font-family: 'Exo', sans-serif;
 h1 {
   font-family: 'Exo', sans-serif;
 }
-html {
-background: linear-gradient(#fff0e6, #b34700, #331400, #fff0e6, #b34700, #331400, #b34700, #fff0e6, #ff751a, #331400, #fff0e6)
 
+body {
+  background: url(../Images/Tigerfur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 ul {
     list-style-type: none;

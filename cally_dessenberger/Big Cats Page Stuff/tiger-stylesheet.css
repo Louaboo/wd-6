@@ -9,10 +9,6 @@ p{
   font-size: 20px;
 }
 
-html {
-      background: linear-gradient(to bottom right, #ff6600, white);
-      height:100%;
-}
 
 ul {
     list-style-type: none;
@@ -70,4 +66,11 @@ color:black;
 }
 .dropdown:hover .dropdown-content {
 display: block;
+}
+
+body {
+  background: url(../Images/fur-background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 }
