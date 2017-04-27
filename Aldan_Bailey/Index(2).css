@@ -97,11 +97,11 @@ to { -o-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
 
 }
 
-.animation{ -webkit-animation: cssAnimation1 5s infinite ease;
+.animation{ -webkit-animation: cssAnimation1 25s infinite ease;
 
--moz-animation: cssAnimation1 5s infinite ease;
+-moz-animation: cssAnimation1 25s infinite ease;
 
--o-animation: cssAnimation1 5s infinite ease;
+-o-animation: cssAnimation1 25s infinite ease;
 
 }
 
@@ -179,15 +179,7 @@ filter: blur(1px);
 
 }
 
-.animation {
 
--webkit-animation: cssAnimation4 5s 20 ease;
-
--moz-animation: cssAnimation4 5s 20 ease;
-
--o-animation: cssAnimation4 5s 20 ease;
-
-}
 
 @-webkit-keyframes cssAnimation4 {
 
