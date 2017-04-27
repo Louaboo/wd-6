@@ -4,179 +4,9 @@
 
   <head>
     <title> Home Page! </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      transform:skewX(8deg);
-        }
-  li a:not(.active) {
-      display: block;
-      color: #000000;
-      text-align: center;
-      padding: 10px 70px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 20px;
-      position: relative;
 
-    }
-.one{
-      background: linear-gradient(225deg, #5cd9fa, #4ab4f6, #8dabff, #00a7e0);
-      background-size: 10000% 10000%;
-
-      -webkit-animation: background-cycle 5s infinite;
-      animation: background-cycle 5s infinite;
-      -moz-animation: background-cycle 5s infinite;
-  }
-.two{
-      background: linear-gradient(225deg, #8dabff, #00a7e0, #5cd9fa, #4ab4f6);
-      background-size: 10000% 10000%;
-
-      -webkit-animation: background-cycle 5s infinite;
-      animation: background-cycle 5s infinite;
-      -moz-animation: background-cycle 5s infinite;
-  }
-.three{
-      background: linear-gradient(225deg, #00a7e0, #5cd9fa, #4ab4f6, #8dabff);
-      background-size: 10000% 10000%;
-
-      -webkit-animation: background-cycle 5s infinite;
-      animation: background-cycle 5s infinite;
-      -moz-animation: background-cycle 5s infinite;
-  }
-  li a:hover:not(.active) {
-    background: rgba(195, 203, 216, 0.95);
-    text-decoration: underline;
-  }
-  li a.active:hover{
-    background: rgba(157, 195, 173, 0.95);
-    text-decoration: underline;
-  }
-  .active {
-        display: block;
-        text-decoration: underline;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 10px 70px;
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 20px;
-        position: relative;
-
-        background: linear-gradient(225deg, #1d424b, #1b4057, #2c354f, #003040);
-        background-size: 10000% 10000%;
-
-        -webkit-animation: background-cycle 5s infinite;
-        animation: background-cycle 5s infinite;
-        -moz-animation: background-cycle 5s infinite;
-  }
-  #nav {
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
-    border: none;
-    position:fixed;
-    top:0;
-  }
-  #nav ul {
-    display: table-row;
-  }
-  #nav li {
-    display: table-cell;
-    margin: 0;
-    float: center;
-    width: 25%;
-    overflow: visible;
-  }
-  h1{
-    font-weight: bold;
-  }
-  h3{
-    display: inline-block;
-  }
-  h1, h6{
-    display:inline;
-  }
-  footer {
-    display: inline-block;
-    background-color: #0c3472;
-    color: #FFFFFF;
-    position: fixed;
-    bottom: 0;
-    width : 100%;
-    text-align: center;
-  }
-  a.foot:visited{
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-  }
-  a.foot:link{
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-  }
-  #right{
-    float : right;
-    margin-right: 10px;
-    transform:
-  }
-  #left{
-    float : left;
-    margin-left: 10px;
-  }
-  .mirror{
-    display: inline-block;
-    transform: scaleX(-1);
-    filter: FlipH; /* IE 6-7-8 */
-  }
-  body{
-    margin:75px 0px 75px 5px;
-    background-image: url("background1.png");
-    background-repeat: repeat;
-    background-size: cover;
-}
-  { background: linear-gradient(225deg, #e6ffff, #e6f7ff, #99c2ff, #e6f7ff);
-    background-size: 10000% 10000%;
-
-    -webkit-animation: background-cycle 8s ease infinite;
-    animation: background-cycle 8s ease infinite;
-  }
-    @-webkit-keyframes background-cycle {
-        0%{background-position:0% 96%}
-        50%{background-position:100% 5%}
-        100%{background-position:0% 96%}
-    }
-    @keyframes background-cycle {
-        0%{background-position:0% 96%}
-        50%{background-position:100% 5%}
-        100%{background-position:0% 96%}
-    }
-    @-moz-keyframes background-cycle {
-        0%{background-position:0% 96%}
-        50%{background-position:100% 5%}
-        100%{background-position:0% 96%}
-    }
-    th, tr, td{
-      border: 3px solid blue;
-
-    }
-    table{
-      width: 100%;
-    }
-    tr:hover{
-      background-color: #e6ffff;
-      color: black;
-    }
-    .color-div{
-      background-color: black;
-    }
-
-  </style>
   <nav>
   <ul id="nav">
     <li><a class = "active" href="index.html">Home Page</a></li>
@@ -206,8 +36,14 @@
 <img src = "images\workaward.jpg"         height = "360px"   width = "360.00px">
 <img src = "images\classtime.jpg"         height = "360px"   width = "537.76px">
 <img src = "images\pringlephysics.jpg"    height = "360px"   width = "359.00px">
-<img src = "images\thuglife.jpg"          height = "360px"   width = "314.56px">
 <img src = "images\mapsandsavage.jpg"     height = "360px"   width = "309.00px">
+<img src = "images\thuglife.jpg"          height = "360px"   width = "314.56px">
+</br>Watch John Carpenter <button type="button" onclick="vidshow()">Here</button>
+
+<script>
+
+</script>
+
 </br><footer>
 
 <h3 id="left"> Built by: Kaysen Hansen</h3>
