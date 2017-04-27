@@ -32,4 +32,6 @@ table {
   color: #2a9702;
   border-color: #008000;
   font-style: italic;
+  border-radius: 5px;
+  width:50%;
 }
