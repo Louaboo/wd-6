@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color:#ffd7b3;
+    text-decoration: none;
+    color: #331800;
+  }
+
+p{
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: light gray;
+}
+h1 {
+  font-size: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color:light gray;
+
+}
+body {
+  background: url(../Images/nav-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

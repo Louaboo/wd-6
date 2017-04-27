@@ -10,9 +10,17 @@ from the form in <p id='greet'>.
 </head>
 <body>
   <h1>Welcome to JavaScript Programming</h1>
+<<<<<<< HEAD
   <form id='frm1'>
     First name: <input id = "fe" type="text" name="fname" value="Donald"><br>
     Last name: <input id = "le" type="text" name="lname" value="Duck"><br>
+=======
+  <form id='info'>
+    First name: <input id = "fe" type="text" name="fname" value="First">
+    <br>
+    Last name: <input id = "le" type="text" name="lname" value="Last">
+    <br>
+>>>>>>> a769457e5cfecf622c395ae265b2ec3c6297adda
   </form>
   <button onclick="display()">Submit</button>
   <p>Click "Submit" to display the value of each element in the form.<br>
@@ -23,6 +31,7 @@ from the form in <p id='greet'>.
   <button onclick="greet()">Greeting</button>
   <br>
   <script>
+<<<<<<< HEAD
 
     function display() {
         var x = document.getElementById("frm1");
@@ -36,6 +45,20 @@ from the form in <p id='greet'>.
         function greet() {
           alert("Welcome" + " " + document.getElementById("fe").value + " " + document.getElementById("le").value);
         }
+=======
+  function display() {
+      var x = document.getElementById("frm1");
+      var text = "";
+      var i;
+      for (i = 0; i < x.length ;i++) {
+          text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("text").innerHTML = text;
+  }
+      function greet() {
+        alert("Welcome" + " " + document.getElementById("fe").value + " " + document.getElementById("le").value);
+      }
+>>>>>>> a769457e5cfecf622c395ae265b2ec3c6297adda
   </script>
 </body>
 </html>

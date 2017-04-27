@@ -9,14 +9,9 @@ me rides anymore in her slugbug because she is too cool for me!-->
 <head>
 
 <Title>Hunting</title>
+  <link href="Index(2).css" rel="stylesheet">
 
 <style>
-body {
-    background-image: url("DuckHunt.jpg");
-    background-repeat: auto;
-
-    background-size: cover;
-}
 
 h1 { text-shadow: 2px 2px 5px red;
 
@@ -51,165 +46,6 @@ h6 {
 text-shadow: 2px 2px #FF1493;
 
 }
-
-#border{ border:double 15px #000000;
-
--moz-border-radius-topleft: 75px;
-
--moz-border-radius-topright:0px;
-
--moz-border-radius-bottomleft:0px;
-
--moz-border-radius-bottomright:75px;
-
--webkit-border-top-left-radius:75px;
-
--webkit-border-top-right-radius:0px;
-
--webkit-border-bottom-left-radius:0px;
-
--webkit-border-bottom-right-radius:75px;
-
-border-top-left-radius:75px;
-
-border-top-right-radius:0px;
-
-border-bottom-left-radius:0px;
-
-border-bottom-right-radius:75px;
-
--moz-box-shadow: 66px 49px 45px #177a66;
-
--webkit-box-shadow: 66px 49px 45px #177a66;
-
-box-shadow: 66px 49px 45px #177a66;}
-
-ul.a {
-
-List-style-image: url(Flag.PNG); height: 10px;
-
-Width 10%;
-
-List-style-position: inside;
-
-}
-
-ul.b {
-
-List-style-type:circle;
-
-List-style-position: inside;
-
-}
-
-p {Background-color: rgb(135,206,235);
-
-Vertical-align: -10px;}
-
-p.small {
-
-font-variant: smapll-caps;}
-
-div h2{
-
--webkit-animation: cssAnimation 6s infinite ease-in;
-
--moz-animation: cssAnimation 6s infinite ease-in;
-
--o-animation: cssAnimation 6s infinite ease-in;
-
-}
-
-@-webkit-keyframes cssAnimation {
-
-from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-
-to { -webkit-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
-
-}
-
-@-moz-keyframes cssAnimation {
-
-from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-
-to { -moz-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
-
-}
-
-@-o-keyframes cssAnimation {
-
-from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-
-to { -o-transform: rotate(8deg) scale(0.648) skew(65deg) translate(-244px); }
-
-}
-
-.animation{ -webkit-animation: cssAnimation1 5s infinite ease;
-
--moz-animation: cssAnimation1 5s infinite ease;
-
--o-animation: cssAnimation1 5s infinite ease;
-
-}
-
-@-webkit-keyframes cssAnimation1 {
-
-from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-
-to { -webkit-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
-
-}
-
-@-moz-keyframes cssAnimation1 {
-
-from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-
-to { -moz-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px); }
-
-}
-
-@-o-keyframes cssAnimation1 {
-
-from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-
-to { -o-transform: rotate(0deg) scale(1.5) skew(1deg) translate(300px);}
-
-#Transition{transition:All 2.1044s ease-in;
-
--webkit-transition:All 2.1044s ease-in;
-
--moz-transition:All 2.1044s ease-in;
-
--o-transition:All 2.1044s ease-in;
-
-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-
--webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-
--moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-
--o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-
--ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-
-}
-
-.classname:hover{
-
-transform: rotate(0deg) scale(0.861) skew(-1deg) translate(0px);
-
--webkit-transform: rotate(0deg) scale(0.861) skew(-1deg) translate(0px);
-
--moz-transform: rotate(0deg) scale(0.861) skew(-1deg) translate(0px);
-
--o-transform: rotate(0deg) scale(0.861) skew(-1deg) translate(0px);
-
--ms-transform: rotate(0deg) scale(0.861) skew(-1deg) translate(0px);
-
-}
-
-#cr { border-radius: 50%;}
-
 
 
 </style>
@@ -262,7 +98,7 @@ size="20">Things I love</font></h3>
 <br>
 
 <h1 id='border'><pre> H U N T I N G   H U N T I N G H U N T I N G   H U N T I N G  H U N T I N G H U N T I N G </pre></h1>
-<marquee behavior="scroll" direction="right"><img  src="Earl.GIF" width="420" height="420"></marquee>
+<marquee behavior="scroll" direction="right"><img  src="Earl.gif" width="420" height="420"></marquee>
 <br>
 <audio autoplay loop controls>
 
@@ -404,7 +240,11 @@ padding: 16px 32px;
 
 <marquee behavior="scroll" direction="down"><img class="grayscale" src="DuckHunt.jpg"
 
-width="420" height="420"></marquee></body>
+width="420" height="420" usemap="#buildingmap"></marquee></body>
+<map name="buildingmap">
+  <area shape="rect" coords="0,0,420,420" alt="Devils" href="index.html">
+</map>
+
 
 <marquee behavior="scroll" direction="left"><img class="blur" src="Goose.jpg" width="420"
 
@@ -442,7 +282,7 @@ height="404"></marquee></body>
 
 <div class="container">
 
-<img src="Trap.jpg" width="420" height="404" class="hover" style="width:100%">
+<img src="Trap.JPG" width="420" height="404" class="hover" style="width:100%">
 
 <div class="middle">
 
@@ -456,7 +296,7 @@ height="404"></marquee></body>
 
 <div class="container">
 
-<img src="Fox.1.jpg" width="420" height="404" class="hover" style="width:100%">
+<img src="Fox.1.JPG" width="420" height="404" class="hover" style="width:100%">
 
 <div class="middle">
 
@@ -468,7 +308,7 @@ height="404"></marquee></body>
 
 <div class="container">
 
-<img src="Coyote.jpg" width="420" height="404" class="hover" style="width:100%">
+<img src="Coyote.JPG" width="420" height="404" class="hover" style="width:100%">
 
 <div class="middle">
 
@@ -480,7 +320,7 @@ height="404"></marquee></body>
 
 <div class="container">
 
-<img src="IMG_5072.jpg" width="550" height="554" class="hover" style="width:100%">
+<img src="IMG_5072.JPG" width="550" height="554" class="hover" style="width:100%">
 
 <div class="middle">
 
@@ -489,7 +329,9 @@ height="404"></marquee></body>
 </div>
 
 </div>
-
+<footer>
+  <h4>Aldan's Life</h4>
+</footer>
 
 
 <br>
@@ -497,7 +339,8 @@ height="404"></marquee></body>
 <br>
 
 </ul>
-
+<br>
+<br>
 </body>
 
 </html>

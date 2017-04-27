@@ -16,6 +16,9 @@ cursor: crosshair;
 float: left;
 height:10px;
 width:5px;
+position: relative;
+top: 100px;
+left: 150px;
 }
 .button:after {
 content: "";
