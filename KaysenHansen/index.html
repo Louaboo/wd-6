@@ -39,10 +39,21 @@
 <img src = "images\mapsandsavage.jpg"     height = "360px"   width = "309.00px">
 <img src = "images\thuglife.jpg"          height = "360px"   width = "314.56px">
 </br>Watch John Carpenter <button type="button" onclick="vidshow()">Here</button>
-
+<div id="myDIV" hidden="hidden">
+  <iframe
+   width = "420px"
+   height = "315px"
+   src = "https://www.youtube.com/embed/watch?v=JSUmAGV2Uco">
+  </iframe>
+</div>
 <script>
     function vidshow(){
-      
+      var x = document.getElementById('myDIV');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
     }
 </script>
 
