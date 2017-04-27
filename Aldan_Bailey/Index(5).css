@@ -91,19 +91,42 @@ transform: rotate(0deg) scale(1) skew(39deg) translate(-31px);
 
 
 .transition1 {
--webkit-animation: cssAnimation 5s 16 ease;
--moz-animation: cssAnimation 5s 16 ease;
--o-animation: cssAnimation 5s 16 ease;
+-webkit-animation: cssAnimation 35s 16 ease;
+-moz-animation: cssAnimation 35s 16 ease;
+-o-animation: cssAnimation 35s 16 ease;
 }
 @-webkit-keyframes cssAnimation {
-from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(5px); }
 to { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
 }
 @-moz-keyframes cssAnimation {
-from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(5px); }
 to { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
 }
 @-o-keyframes cssAnimation {
-from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(5px); }
 to { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+
+img.invert {
+        filter:invert(100%);
+}
+
+img.filter {
+        filter:drop-shadow(25px 28px 10px red);
+}
+
+img.saturate {
+        filter:saturate(8);
+}
+img.sepia {
+        filter:sepia(100%);
+}
+
+img.blur {
+        filter:blur(1.5px);
+}
+
+img.circle {
+    border-radius: 50%;
 }
