@@ -32,3 +32,29 @@
 .dropdown:hover .dropbtn {
     background-color: #ED330B;
 }
+th {
+    text-shadow: 2px 2px 5px red;
+}
+th{
+  font-size: 100px;
+}
+td{
+  font-size: 50px;
+}
+.Table{color:ED330B}
+li,h1 {
+    text-shadow: 2px 2px 5px red;
+}
+h1{
+  font-size: 100px;
+}
+li{
+  font-size: 50px;
+}
+#center{
+  width:800px;
+  margin:auto;
+}
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
