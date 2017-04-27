@@ -9,6 +9,57 @@
 
 }
 
+
+h1 {
+
+text-shadow: 2px 2px 5px red;
+
+}
+
+
+h3 {
+
+text-shadow: 2px 2px #FFFF00;
+
+}
+h5 {
+text-shadow: 2px 2px 5px green;}
+
+
+
+h6 {
+
+text-shadow: 2px 2px #FF1493;
+
+}
+
+img {border-radius: 30px; // partially rounded corners}
+
+img {border-radius: 100%; // full circular image}
+
+
+
+
+
+h4  {
+
+
+
+text-shadow: 2px 2px #00FFFF;
+
+}
+
+
+
+h2 {
+
+text-shadow: 2px 2px 5px blue;
+
+}
+
+
+
+
 @-webkit-keyframes cssAnimation8 {
 
 from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
