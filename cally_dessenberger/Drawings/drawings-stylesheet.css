@@ -6,29 +6,6 @@ p{
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 20px;
 }
-a:link{
-  text-decoration: none;
-  color: black;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #a3f5f5;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 20px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .desc {
     padding: 15px;
