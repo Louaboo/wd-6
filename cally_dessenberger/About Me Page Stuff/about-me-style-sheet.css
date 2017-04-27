@@ -23,3 +23,15 @@ html {
 background: linear-gradient(#80ff80,#ffffb3, #ffff80);
 height: 100%;
 }
+table {
+  border-style: double;
+  border-width: 15px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+    background-color: #ffff99;
+  color: #2a9702;
+  border-color: #008000;
+  font-style: italic;
+  border-radius: 5px;
+  width:50%;
+}
