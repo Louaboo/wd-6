@@ -39,3 +39,15 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+li,h1,th {
+    text-shadow: 2px 2px 5px red;
+}
+h1,th{
+  font-size: 100px;
+}
+li,td{
+  font-size: 50px;
+}
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
