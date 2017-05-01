@@ -1,0 +1,45 @@
+h1, p, h3, h2{
+  font-family: 'Russo One', sans-serif;
+}
+
+h3 {
+  font-size:200%;
+  position: left;
+  right: 400px
+  top: 200px
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+      float:left;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+img.Vlog {border-radius: 100%; // full circular image}
+
+li a{
+  background-color: grey;
+}
+
+h5 {
+  background-color: lightblue;
+}
+
+
+  h1,p{
+   font-size: 150%;
+}
