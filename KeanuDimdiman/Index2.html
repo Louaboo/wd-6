@@ -5,6 +5,37 @@
       <title>Round 2</title>
       <link href="style2.css" type="text/css" rel="stylesheet">
     </head>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">More </br> Stuff</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://csp-nuames-jsimonsen.github.io/wd-6/KeanuDimdiman/GiveUp2">Give Up (Answer)</a>
+    <a href="https://www.google.com/search?q=kenny+scharf+cosmic+cavern&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi__PfriM_TAhUJx2MKHeJmCoIQ_AUICigB&biw=935&bih=934#imgrc=1XBQPZoCwgncRM:">
+      The <b> Maker</b> of<br> This Art</a>
+
+
+  </div>
+</div>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 <Body background="Graffiti.jpg">
   <a href="https://csp-nuames-jsimonsen.github.io/wd-6/KeanuDimdiman/Index3">
     <button class="button"></button></a>
