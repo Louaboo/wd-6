@@ -26,10 +26,52 @@ h2{
   width: 205px;
 }
 .button{
-background-color: rgba(100,0,200,0.5);
+background-color: rgba(150,0,200,.2);
 border: none;
 cursor: crosshair;
 height:5px;
 width:2px;
+position: relative;
+top: 320px;
+left: 500px;
 
 }
+.dropbtn {
+    background-color: rgba(150, 0, 100, 1);
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+		font-style: italic;
+border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(150, 0, 100, 1);
+    min-width: 10px;
+    overflow: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 3px 4px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
