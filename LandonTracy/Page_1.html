@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Dr. Tracy's Website</title>
+    <title>Dr. Tracy's</title>
   </head>
   <style>
 
@@ -10,32 +10,65 @@
     font-family: Times;}
   body{background-color: #738F9B;}
   ul {list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;}
-li {float: left;
-    margin: 0px;}
-li a {display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;}
+  li {float: left;}
+  li a, .dropbtn {display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;}
+  li a:hover, .dropdown:hover .dropbtn {background-color: red;}
+  li.dropdown {display: inline-block;}
+  .dropdown-content {display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;}
+  .dropdown-content a {color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;}
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  a:link{color: black;
+  text-decoration: none;}
+  a:visited{color: black;
+    text-decoration: none ;}
+  a:hover{color: red;
+    text-decoration: green;}
+  a.active{color: purple;
     text-decoration: none;}
-li a:hover {background-color: #111;}
     </style>
 
   <body>
-<h1 href="http://bfy.tw/AT7M" target="_blank">Dr. Tracy's Website </h1>
+    <center>
+<h1>
+  <a href="http://bfy.tw/AT7M" target="_blank">Dr. Tracy's Website </a>
+</h1>
+</center>
 <ul>
   <li><a class="active" href="#Teriyaki">Teriyaki</a></li>
   <li><a href="#Penci">Pencil</a></li>
   <li><a href="#Cactus">Cactus</a></li>
   <li><a href="#Circus">Circus</a></li>
+  <li class="dropdown"><a>Old Work</a>
+     <div class="dropdown-content">
+       <a href="Page_1.html" target="_blank">Dr. Tracy</a>
+       <a href="Page_2.html" target="_blank">Uncle Terry's Teleporters</a>
+       <a href="Page_3.html" target="_blank">About Page</a>
+       <a href="http://www.hackertyper.com/" target="_blank">HACK!</a>
 </ul>
 
 <h3>What's better than 1 Mozzerella Stick? 37 Mozzerella Sticks!</h3>
- <img title="beach" src="Pictures/Beach.JPG" alt="The sky" width="50%" height="50%">
-
+<center>
+ <img title="beach" src="Pictures/Beach.jpg" alt="The sky" width="50%" height="50%">
+</center>
  <map name="#Waluigi">
    <area shape="rect" coords="0,0,1024,768 " href="http://www.hmpg.net/">
  </map>
