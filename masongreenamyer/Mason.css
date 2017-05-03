@@ -51,3 +51,15 @@ li,td{
 h1 {
     font-family: "Times New Roman", Times, serif;
 }
+footer{
+  background-color: white;
+}
+.yep {
+
+-webkit-animation: cssAnimation8 5s 16 ease-in;
+
+-moz-animation: cssAnimation8 5s 16 ease-in;
+
+-o-animation: cssAnimation8 5s 16 ease-in;
+
+}

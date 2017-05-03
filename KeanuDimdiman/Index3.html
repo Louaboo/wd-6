@@ -8,10 +8,40 @@
 <Body background="sharon-sabharwal.jpg">
   <a href="https://csp-nuames-jsimonsen.github.io/wd-6/KeanuDimdiman/Index4">
     <button class="button"></button></a>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Stuff</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://csp-nuames-jsimonsen.github.io/wd-6/KeanuDimdiman/GiveUp3">Give Up (Answer)</a>
+    <a href="https://www.pinterest.com/pin/350788258459083251/" >For Image </a>
+
+
+  </div>
+</div>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 <p>
   <left><h1>This One will leave<br>
   You Mad</h1>
 </left>
 </p>
-
+<footer> Never Gonna Let </footer>
 </html>
