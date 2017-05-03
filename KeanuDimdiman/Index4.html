@@ -7,17 +7,45 @@
     </head>
 <Body background="79d.gif">
 
-
+  <a href="https://csp-nuames-jsimonsen.github.io/wd-6/KeanuDimdiman/TheLastOne">
     <button class="button"></button></a>
+    <button onclick="myFunction()" class="dropbtn">Stuff</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="https://csp-nuames-jsimonsen.github.io/wd-6/KeanuDimdiman/GiveUp4">Give Up (Answer)</a>
+      <a href="http://comic.naver.com/webtoon/detail.nhn?titleId=350217&no=31&weekday=tue" >For This Amazing Gif (It's A Story By the Way) </a>
+      <a href="http://soundbible.com/1570-Death.html"> For the Audio </a>
+    </div>
+  </div>
+  <script>
+
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
 <p>
   <h1>Would You Look<br>
   At That</h1>
 
 </p>
 <script type="text/javascript">
-  alert("You Have One a Free Samsung S7 Find Button to Claim Reward");
+  alert("Put On Your Volume   The Audio Will Tell You A Hint");
 </script>
 <audio controls autoplay loop>
   <source src="death-Roman_K-1190383229.mp3" type="audio/mpeg">
   </audio>
+
+  <footer> You Down </footer>
 </html>
