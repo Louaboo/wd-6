@@ -152,6 +152,7 @@ body{
     border: 3px solid blue;}
 table{
     width: auto;
+    margin: auto;
 }
 tr:hover:not(.table-head){
     background-color: black;
