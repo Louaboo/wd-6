@@ -2,7 +2,7 @@ h1, p, h2 {
   font-family: 'Russo One', sans-serif;
 }
 
-h2,p {
+h2, p,th,td {
   font-size:200%;
   position: left;
   right: 400px

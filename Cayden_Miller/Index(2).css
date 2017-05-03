@@ -1,8 +1,11 @@
 
-      h3, h2 {
-        color: white;
+h1, p, h3, h2{
+  font-family: 'Russo One', sans-serif;
+}
+      h3, h2, p {
+        color: darkgray;
       }
-      h2, {
+      h2, p {
         font-size:200%;
         position: left;
         right: 400px
