@@ -1,0 +1,23 @@
+body{
+  background-image: url("79d.gif");
+  background-size: 50%, 50%;
+}
+.button{
+  border: none;
+  background-color: blue;
+  height: 5px;
+  width: 10px;
+  position: relative;
+  top: 100px;
+  left: 500px;
+  cursor: auto;
+}
+h1{
+  background-color: white;
+  width: 250px;
+  height: 90px;
+}
+audio{
+  height: 20px;
+  width: 25px;
+}
