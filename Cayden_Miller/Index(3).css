@@ -43,3 +43,7 @@ h5 {
   h1,p{
    font-size: 150%;
 }
+
+h3 {
+  text-align: right;
+}

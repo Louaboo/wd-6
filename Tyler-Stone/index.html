@@ -60,7 +60,21 @@
         div.outer { position: relative; height: 24px; }
  div.outer img { position: absolute; right: 0; bottom: 0; }
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: black;
+}
 </style>
 </head>
 <body>
@@ -82,7 +96,29 @@
 </a>
 <br>
 </br>
+<table style="width:100%">
+  <tr>
+    <th>Song Name</th>
+    <th>Highest on Charts</th>
+    <th>Current on Charts</th>
+  </tr>
+  <tr>
+    <td>The Digster</td>
+    <td>2nd</td>
+    <td>4th</td>
+  </tr>
+  <tr>
+    <td>Ignite</td>
+    <td>2nd</td>
+    <td>9th</td>
+  </tr>
+  <tr>
+    <td>LitSkies</td>
+    <td>1st</td>
+    <td>3rd</td>
+  </tr>
+</table>
 <a href="https://www.w3schools.com/html/">Visit the HTML tutorial on how to do hyperlinks</a>
 <div class="outer">
  </div>
-<iframe width="0" height="0" src="https://www.youtube-nocookie.com/embed/Cufz92eiUPQ?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="0" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172323262&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
