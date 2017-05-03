@@ -7,7 +7,7 @@
 	top: 10%;
 	left:47%;
 	right: 47%;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 		background-color: rgb(113,117,127);
@@ -17,7 +17,7 @@
 }
 
 #hide:hover{
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	background-color: rgb(63,67,77);
@@ -29,7 +29,7 @@
 	position: absolute;
 	top: 2%;
 	background-color: rgb(113,117,127);
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 		font-family: 'Raleway', sans-serif;
 		left: 35%;
@@ -219,6 +219,33 @@
 		z-index: 100;
 }
 
+#credits{
+	opacity: 0; transition: opacity 2s;
+  position: absolute;
+  opacity: 0.7;
+  transition: 0.1s;
+  right: 5%;
+  top: 22.3%;
+  height: 216px;
+  width: 400px;
+  border-radius: 5%;
+  border:5px solid rgb(43,53,57);
+	z-index: 46;
+}
+
+
+
+#Credits:hover {
+    position: absolute;
+    opacity: 1;
+    transition: 0.1s;
+    right: 4%;
+		top: 21.5%;
+    height: 232.2px;
+    width: 440px;
+		z-index: 100;
+}
+
 #RomanAquaduct{
   position: absolute;
   z-index: -1;
@@ -233,6 +260,7 @@
 body {
   background-color: rgba(0,100,255,0.65);
 	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
 }
 
 
