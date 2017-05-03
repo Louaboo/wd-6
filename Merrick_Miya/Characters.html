@@ -2,14 +2,76 @@
 <html>
 <head>
 <style>
+p {
+  font-family: "Times New Roman", Times, serif;
+}
 body {background-image: url(http://images.hellogiggles.com/uploads/2016/08/02073325/ST_107-108_Unit_0754_R_CROP1.jpg)}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 </style>
 </head>
 <body>
+  <div class="dropdown">
+<button class="dropbtn">Dropdown Menu</button>
+<div class="dropdown-content">
+  <a href="#" target="_blank">Characters</a>
+  <a href="#">Plot</a>
+  <a href="#">Monsters</a>
+  <a href="file:///C:/Users/merrickmiya/Documents/GitHub/wd-6/Merrick_Miya/index.html">Home</a>
+</div>
+</div>
   <img title="Eleven, played by Milly Bobby Brown" src="http://i.dailymail.co.uk/i/pix/2016/09/01/08/37C7ED9E00000578-3768381-image-m-31_1472713527244.jpg">
   <img title="Dustin, played by Gaten Matarazzo" src="http://images.hellogiggles.com/uploads/2016/08/05064304/dustin.jpg">
-  <img title="Chief Hopper, played by David Harbour" src="http://images.hellogiggles.com/uploads/2016/08/10044027/hop.jpg">
+  <img title="Chief Hopper, played by David Harbour" src="http://images.hellogiggles.com/uploads/2016/08/10044027/hop.jpg" usemap="#charmap">
     <map name="charmap">
       <area shape="rect" coords="0,0,1225,612" href="http://strangerthings.wikia.com/wiki/Jim_Hopper">
     </map>
   <img title="Barb, played by Shannon Purser" src="http://media.comicbook.com/2017/01/barb-stranger-things-223161.jpg">
+<p>You want your font-change? I'll show you a font-change!</p>
+<a href="http://strangerthings.wikia.com/wiki/Stranger_Things_Wiki">Stranger things wiki</a>
+<footer>
+  <p>How ya doin'? Oh don't mind me. I'm just here.</p>
+</footer>
