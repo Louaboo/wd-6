@@ -1,88 +1,104 @@
 <!doctype html>
 <html>
 <head>
-  <title> Coldplay Fan</title>
-<link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+  <title>Amanda's Favorite Music</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <style>
   body {
     background-color: #ffb3b3;
-    font-family: 'Nova Mono', monospace;
+    font-family: 'Oswald', sans-serif;
     background-image: url(images/clouds101.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
   }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#f08ff0;
-}
-li {
-  float: left;
-}
-li a {
-display: block;
-color: #000;
-padding: 8px 16px;
-text-decoration: none;
-}
-
-/* Change the link color on hover */
-li a:hover {
-background-color: #ca1cca;
-color: white;
-}
-li a.active {
-background-color: #cc0066;
-color: white;
-}
-
-li a:hover:not(.active) {
-background-color: #d65cad;
-color: white;
-}
  h2 {
-   padding: 10px 10px;
+   padding: 8px 8px;
    text-align: center;
    text-shadow: 2px 2px 5px 	#00CED1;
  }
- li {
-   float: left;
+ #People {
+   padding: 10px 10px;
+   text-align: center;
+   text-shadow: 2px 2px 5px  #ffff00;
  }
- li a {
- display: block;
- color: #000;
- padding: 8px 16px;
- text-decoration: none;
-}
+h1{
+  padding: 10px 10px;
+  text-align: center;
 
+}
  p {
 
    text-align: center;
 
    letter-spacing: 4px;
  }
- 
+ .dropbtn {
+    background-color: #99ff33;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ccff66;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #c2f0c2}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #33cc33;
+}
 </style>
 
 <body>
-  <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href= "firstpage.html">First</a></li>
-    <li><a href="secondpage.html">Second</a></li>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="secondpage.html">Dogs</a>
+      <a href="thirdpage.html">Studio Ghibli</a>
+      <a href="fourthpage.html">About Me</a>
+    </div>
+  </div>
+  <h1>Music</h1>
+<hr width="1200px">
+    <h2>COLDPLAY is AWESOME!</h2>
+    <p>
+"Everything you want's a dream away<br/ >
 
-  </ul>
-  <h2>COLDPLAY is AWESOME!<h2>
-    <p><pre>
-"Everything you want's a dream away
+Under this pressure under this weight<br/ >
 
-Under this pressure under this weight
-
-We are diamonds taking shape."</pre> <p>
-
+We are diamonds taking shape."<br/ >
+Coldplay is an Alternative rock band from Great Britain that was formed in 1996.
+The band members include Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion<p>
+  <hr width="1200px">
+  <h2 id=People>Foster the People is LIT.</h2>
+  <p2></p2>
   </body>
 </html>
