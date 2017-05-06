@@ -7,13 +7,42 @@
 </head>
   <style>
     body {
-      background-color: #99ff99;
+      background-color: #aaff80;
       font-family: 'Nova Mono', monospace;
-      background-image: url("space.jpg");
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
+      background-image: url("../Images/space.jpg");
     }
+    div {
+      width: 90px;
+      height: 90px;
+      background-color: #ff4d4d;
+      position: relative;
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+      -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+      0%   {background-color:#ff4d4d; left:0px; top:0px;}
+      25%  {background-color:#ffff66; left:1250px; top:0px;}
+      50%  {background-color:#ffdb4d; left:0px; top:200px;}
+      75%  {background-color:#ffff33; left:0px; top:0px;}
+      100% {background-color:#c4ff4d; left:0px; top:0px;}
+  }
+
+  /* Standard syntax */
+  @keyframes example {
+      0%   {background-color:#ff4d4d; left:0px; top:0px;}
+      25%  {background-color:#ffff66; left:1250px; top:0px;}
+      50%  {background-color:#ffdb4d; left:0px; top:0px;}
+      75%  {background-color:#ffff33; left:0px; top:0px;}
+      100% {background-color:#c4ff4d; left:0px; top:0px;}
+  }
     ul {
       list-style-type: none;
       margin: 0;
@@ -70,28 +99,22 @@ li a:hover:not(.active) {
       animation-name: example;
       animation-iteration-count: infinite;
     }
-    @keyframes example {
-        0%   {background-color: blue; left:0px; top:0px;}
-        15%  {background-color: #cc33ff; left:0px; top:300px;}
-        25%  {background-color: gold; left:0px; top:700px;}
-        50%  {background-color: silver; left:200px; top:200px;}
-        75%  {background-color: green; left:0px; top:200px;}
-        100% {background-color: lime; left:0px; top:1000px;}
 
-      }
       table, th, td {
-    border: 1px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
   }
 th, td {
     padding: 10px;
+    height: 30px;
   }
   table{
-      width: auto;
+      width: 100%;
       margin: auto;
+      text-align: center;
   }
   tr:hover:not(.table-head){
-      background-color: #99ff99;
+      background-color: #ecb3ff;
       color: black;
   }
   .table-head{
@@ -105,16 +128,17 @@ th, td {
   <body>
 <h1>Welcome to My Website</h1>
   <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="firstpage.html">Music</a></li>
-    <li><a href="secondpage.html">Dogs</a></li>
-    <li><a href="thirdpage.html">Studio Ghibli</a></li>
-    <li><a href="fourthpage.html">About Me</a></li>
+    <li><a class="active" href="../Home_Page/index.html">Home</a></li>
+    <li><a href="../First_Page/firstpage.html">Music</a></li>
+    <li><a href="../Second_Page/secondpage.html">Dogs</a></li>
+    <li><a href="../Third_Page/thirdpage.html">Studio Ghibli</a></li>
+    <li><a href="../Fourth_Page/fourthpage.html">About Me</a></li>
   </ul>
   <p>
-    Hi! Welcome to my website that is all about me and other random stuff. Below
-    is a table of all my favorite things.
+    Hi! Welcome to my website that is all about me and other random stuff. <br>
+    Below is a table of all my favorite things.
   </p>
+<div></div>
   <table style="width:100%">
   <tr>
     <th>Favorite</th>
@@ -144,7 +168,7 @@ th, td {
     <td>TV Show</td>
     <td>The Office </td>
 </table>
-<div id="id"></div>
+<div></div>
 
 </body>
 </html>
