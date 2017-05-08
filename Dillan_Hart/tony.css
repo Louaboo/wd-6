@@ -83,7 +83,16 @@
   bottom: 0%;
   opacity: 0.7;
 }
-
+#naper{
+	position: absolute;
+	z-index: -1;
+	top: 0%;
+	left: 25%;
+  bottom: 0%;
+  opacity: 0.7;
+	width:50%;
+	height:100%;
+}
 #physical{
   position: absolute;
   z-index: -1;
