@@ -6,10 +6,14 @@
 <link href="https://fonts.googleapis.com/css?family=Kalam|Nova+Oval|Handlee|" rel="stylesheet">
   </head>
    <body><center>
+     <article>
+       <header>
     <h1> Writing is my favorite hobby, what about you? </h1>
+  </header>
      <p> I like to write fantasy
        and most genres of fiction! :D Wanna read something? Well I hope so! :D</p>
        <p> (Heads up, not all of these are related to eachother XD)</p>
+     </article>
      </center>
      <p id= "Stories">
        Here are a few abveiations for writers and what they mean. <p>
@@ -402,5 +406,51 @@ Bree's face fell and tears brimmed at her eyes as her head drooped so her chin w
 
 "Let them in you grumpy bear." Bree smiled ushering him away. Jay grabbed his book and left with no complaints before letting her family in and fuss over her, assuring them she'll live and wouldn't stop breathing during the night. Bree smiled at her family, the uncomfortable feeling of being paralyzed wasn't welcome, but her friendship with Jay and seeing her family care was definitely welcomed. <br> <br> </p>
 </details>
+<br>
+<br>
+<br>
+<p> (Again, I'm lazy)</p>
+<form>
+  First number: <input id = "1" type="number" value = "10">
+  <br>
+  Second number: <input id = "2" type="number" value="5">
+</form>
+<button onclick="add();">Add</button>
+<button onclick="sub();">Subtract</button>
+<button onclick="mul();">Multiply</button>
+<button onclick="div();">Divide</button>
+<p id="sol"></p>
+<script type="text/javascript">
+  var sol = document.getElementById('#');
+
+  function add(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x + y;
+    document.getElementById("sol").innerHTML= "The Sum is:" + z;
+  }
+  function sub(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x - y;
+    document.getElementById("sol").innerHTML= "The Difference is:" + z;
+  }
+  function mul(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x * y;
+    document.getElementById("sol").innerHTML= "The Product is:" + z;
+  }
+  function div(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x / y;
+    document.getElementById("sol").innerHTML= "The Quotient is:" + z;
+}
+</script>
    </body>
   </html>
