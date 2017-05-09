@@ -616,5 +616,10 @@ font-size:120%;
     padding: 16px 32px;
 
     }
+  .grayscale {  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */  filter: grayscale(100%);}
 
-    .grayscale {  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */  filter: grayscale(100%);}
+
+  table, th, td{border: 2px solid green;}
+  table{border-collapse: collapse;}
+  td{padding: 15px;
+    background-color: lightblue;}

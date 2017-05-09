@@ -49,3 +49,12 @@ to { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
 from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
 to { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
 }
+td {
+    text-shadow: 2px 2px 5px red;
+}
+td {
+  font-size: 100px;
+}
+td {
+    font-family: "Times New Roman", Times, serif;
+}
