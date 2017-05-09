@@ -1,0 +1,194 @@
+body {
+    background-image: url("Trump.jpg");
+    background-repeat: auto;
+
+    background-size: contain;;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+
+h1 {
+
+text-shadow: 2px 2px 5px red;
+
+}
+
+h2 {
+
+text-shadow: 2px 2px 5px  blue;
+
+}
+
+h3 {
+
+text-shadow: 2px 2px 5px  #FFFF00;
+
+}
+
+h4 {
+
+text-shadow: 2px 2px 5px  #00FFFF;
+
+}
+
+h5 {
+
+text-shadow: 2px 2px 5px  green;
+
+}
+
+h6 {
+
+text-shadow: 2px 2px 5px  #FF1493;}
+
+.cake{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: yellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:blue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 10px 18px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:	#008B8B}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.classname {
+-webkit-animation: cssAnimation 6.7699s infinite ease;
+-moz-animation: cssAnimation 6.7699s infinite ease;
+-o-animation: cssAnimation 6.7699s infinite ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(0deg) scale(2.304) skew(1deg) translate(700px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(0deg) scale(2.304) skew(1deg) translate(700px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(0deg) scale(2.304) skew(1deg) translate(700px); }
+}
+
+.grayscale {
+
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+
+filter: grayscale(100%);
+
+}
+
+.Skewww {
+transition:All 1s ease;
+-webkit-transition:All 1s ease;
+-moz-transition:All 1s ease;
+-o-transition:All 1s ease;
+transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+}
+.Skewww:hover{
+transform: rotate(0deg) scale(1) skew(39deg) translate(-31px);
+-webkit-transform: rotate(0deg) scale(1) skew(39deg) translate(-31px);
+-moz-transform: rotate(0deg) scale(1) skew(39deg) translate(-31px);
+-o-transform: rotate(0deg) scale(1) skew(39deg) translate(-31px);
+-ms-transform: rotate(0deg) scale(1) skew(39deg) translate(-31px);
+}
+
+
+.transition1 {
+-webkit-animation: cssAnimation 35s 16 ease;
+-moz-animation: cssAnimation 35s 16 ease;
+-o-animation: cssAnimation 35s 16 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(5px); }
+to { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(5px); }
+to { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(5px); }
+to { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+
+img.invert {
+        filter:invert(100%);
+}
+
+img.filter {
+        filter:drop-shadow(25px 28px 10px red);
+}
+img.filter1 {
+        filter:drop-shadow(25px 28px 10px blue);
+}
+
+img.saturate {
+        filter:saturate(8);
+}
+img.sepia {
+        filter:sepia(100%);
+}
+
+img.blur {
+        filter:blur(1.5px);
+}
+
+img.circle {
+    border-radius: 50%;
+}
