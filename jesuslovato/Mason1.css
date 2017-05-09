@@ -1,0 +1,53 @@
+
+.dropbtn {
+    background-color: ED330B;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ED330B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #660EB3}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #ED330B;
+}
+body {
+    background-image: url("bagged rex.jpg");
+    background-repeat: no-repeat;
+    background-position: center;;
+    background-attachment: fixed;
+    background-size: contain;
+}
+li,h1 {
+    text-shadow: 2px 2px 5px red;
+}
+h1{
+  font-size: 100px;
+}
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+footer{
+  background-color: white;
+}
