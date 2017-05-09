@@ -13,7 +13,7 @@
      <li <li class="dropdown">
        <a href="About Me Page Stuff/me-page.html"target= "_blank">About Me</a>
        <div class="dropdown-content">
-         <a href="Writing/Writing.html" target= "_blank">Writing</a>
+         <a href="Writing.html" target= "_blank">Writing</a>
          <a href="Drawings/Drawings.html" target= "_blank">Drawing</a>
        </div>
      </li>
@@ -30,5 +30,50 @@
          <br> Isn't it cool?! Audio, video, scroll bars and more!!</p>
          <p2> (go to my about page!) </p2>
 </center>
+
+
+<p> -(I'm lazy so here's Javascript! XD)</p>
+<form>
+  First number: <input id = "1" type="number" value = "10">
+  <br>
+  Second number: <input id = "2" type="number" value="5">
+</form>
+<button onclick="add();">Add</button>
+<button onclick="sub();">Subtract</button>
+<button onclick="mul();">Multiply</button>
+<button onclick="div();">Divide</button>
+<p id="sol"></p>
+<script type="text/javascript">
+  var sol = document.getElementById('#');
+
+  function add(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x + y;
+    document.getElementById("sol").innerHTML= "The Sum is:" + z;
+  }
+  function sub(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x - y;
+    document.getElementById("sol").innerHTML= "The Difference is:" + z;
+  }
+  function mul(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x * y;
+    document.getElementById("sol").innerHTML= "The Product is:" + z;
+  }
+  function div(){
+    var num = document.getElementsByTagName("INPUT");
+    var x = document.getElementById("1").value;
+    var y = document.getElementById("2").value;
+    var z = x / y;
+    document.getElementById("sol").innerHTML= "The Quotient is:" + z;
+}
+</script>
  </body>
 </html>
